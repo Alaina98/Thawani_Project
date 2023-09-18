@@ -4,6 +4,7 @@ use App\Http\Controllers\Api\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\TestCaseController;
 
 
 /*
@@ -46,3 +47,4 @@ Route::group([
     Route::post('me', 'AuthController@me');
 
 });
+Route::apiResource('/testcase', TestCaseController::class);
