@@ -5,6 +5,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\TestCaseController;
+use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\NoticesController;
+
 
 
 /*
@@ -48,3 +51,5 @@ Route::group([
 
 });
 Route::apiResource('/testcase', TestCaseController::class);
+Route::apiResource('/project', ProjectController::class);
+Route::apiResource('/notices', NoticesController::class);

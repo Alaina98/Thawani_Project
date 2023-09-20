@@ -3,14 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Project;
 
-class ProjectController extends Controller
+class NoticesController extends Controller
 {
-    protected $project;
-    public function __construct(){
-        $this->project = new Project();
-    }
     /**
      * Display a listing of the resource.
      *
@@ -18,7 +13,7 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        return $this->project->all();
+        //
     }
 
     /**
@@ -29,7 +24,7 @@ class ProjectController extends Controller
      */
     public function store(Request $request)
     {
-        return $this->project->create($request->all());
+        //
     }
 
     /**
@@ -40,7 +35,7 @@ class ProjectController extends Controller
      */
     public function show($id)
     {
-        return $testcase = $this->project->find($id);
+        //
     }
 
     /**
@@ -52,9 +47,7 @@ class ProjectController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $project = $this->project->find($id);
-        $project->update($request->all());
-        return $project;
+        //
     }
 
     /**
@@ -65,20 +58,6 @@ class ProjectController extends Controller
      */
     public function destroy($id)
     {
-        $project = $this->project->find($id);
-        if(!$id)
-        {
-            return response()->json([
-                'success' => false,
-                'message' => "Project Not found"
-            ]);
-        }
-
-         $id->delete();
-
-        return response()->json([
-            'success' => true,
-            'message' => "Project deleted successfully"
-        ]);
+        //
     }
 }
