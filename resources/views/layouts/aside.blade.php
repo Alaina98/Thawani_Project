@@ -967,7 +967,7 @@
                                 <!--begin:Menu item-->
                                 <div class="menu-item">
                                     <!--begin:Menu link-->
-                                    <a class="menu-link" href="../../demo10/dist/apps/user-management/users/view.html">
+                                    <a class="menu-link" href="../../crud_api/resources/views/user/view-user.html">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
