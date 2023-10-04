@@ -19,5 +19,9 @@ class RoleSeeder extends Seeder
         Role::create(['name' => 'admin']);
         Role::create(['name' => 'user']);
         Role::create(['name' => 'writer']);
+        //The list of Permissions:
+        //Permission::create(['name'=>'Write commet']);
+         //Permission::create(['name'=>'add Project']);
+         
     }
 }
