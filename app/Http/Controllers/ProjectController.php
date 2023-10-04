@@ -11,6 +11,7 @@ class ProjectController extends Controller
     public function __construct(){
         $this->project = new Project();
     }
+ //--------------------------------------------------------------------
     /**
      * Display a listing of the resource.
      *
@@ -20,7 +21,7 @@ class ProjectController extends Controller
     {
         return $this->project->all();
     }
-
+//---------------------------------------------------------------------
     /**
      * Store a newly created resource in storage.
      *
@@ -31,7 +32,7 @@ class ProjectController extends Controller
     {
         return $this->project->create($request->all());
     }
-
+//------------------------------------------------------------------------
     /**
      * Display the specified resource.
      *
@@ -43,6 +44,9 @@ class ProjectController extends Controller
         return $testcase = $this->project->find($id);
     }
 
+
+
+//------------------------------------------------------------------------
     /**
      * Update the specified resource in storage.
      *
@@ -57,6 +61,10 @@ class ProjectController extends Controller
         return $project;
     }
 
+
+
+
+//-------------------------------------------------------------------------
     /**
      * Remove the specified resource from storage.
      *

@@ -10,7 +10,7 @@
                 <span class="fs-2hx fw-bold text-white me-2 lh-1 ls-n2">69</span>
                 <!--end::Amount-->
                 <!--begin::Subtitle-->
-                <span class="text-white opacity-50 pt-1 fw-semibold fs-6">Active Projects</span>
+                <span class="text-white opacity-50 pt-1 fw-semibold fs-6">Active Test</span>
                 <!--end::Subtitle-->
             </div>
             <!--end::Title-->

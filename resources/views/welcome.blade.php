@@ -35,13 +35,18 @@ License: For each use you must have a valid license purchased only from above li
 		<!--end::Vendor Stylesheets-->
         <link href="/templates/t1/assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="/templates/t1/assets/plugins/custom/vis-timeline/vis-timeline.bundle.css" rel="stylesheet" type="text/css" />
-
+<!--begin::Vendor Stylesheets(used for this page only)-->
+<link href="templates/t1/assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+<link href="templates/t1/assets/plugins/custom/vis-timeline/vis-timeline.bundle.css" rel="stylesheet" type="text/css" />
+<!--end::Vendor Stylesheets-->
 
 
 		<!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
 		<link href="/templates/t1/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="/templates/t1/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 		<!--end::Global Stylesheets Bundle-->
+
+
 		<script>// Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }</script>
 	</head>
 	<!--end::Head-->
@@ -1945,11 +1950,13 @@ License: For each use you must have a valid license purchased only from above li
 <div id="kt_content_container" class="container-xxl">
 
 @include('layouts.active')
-    <!--begin::Calendar Widget 1-->
+
     <div class="card">
     @include('layouts.testcasebox')
     </div>
-    <!--end::Calendar Widget 1-->
+</div>
+
+    @include('layouts.projectstate')
 
     <!--begin::Modals-->
     <!--begin::Modal - New Product-->
@@ -2199,7 +2206,7 @@ License: For each use you must have a valid license purchased only from above li
     <!--end::Modals-->
 </div>
 <!--end::Container-->
-</div>
+ 
 
 						<!--end::Post-->
 					</div>

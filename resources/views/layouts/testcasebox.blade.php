@@ -129,7 +129,7 @@
                                     <span class="text-gray-700 fw-bolder d-block fs-2qx lh-1 ls-n1 mb-1">37</span>
                                     <!--end::Number-->
                                     <!--begin::Desc-->
-                                    <span class="text-gray-500 fw-semibold fs-6">Courses</span>
+                                    <span class="text-gray-500 fw-semibold fs-6">Tajer</span>
                                     <!--end::Desc-->
                                 </div>
                                 <!--end::Stats-->
@@ -157,7 +157,7 @@
                                     <span class="text-gray-700 fw-bolder d-block fs-2qx lh-1 ls-n1 mb-1">6</span>
                                     <!--end::Number-->
                                     <!--begin::Desc-->
-                                    <span class="text-gray-500 fw-semibold fs-6">Certificates</span>
+                                    <span class="text-gray-500 fw-semibold fs-6">Aplication</span>
                                     <!--end::Desc-->
                                 </div>
                                 <!--end::Stats-->
@@ -186,7 +186,7 @@
                                     <span class="text-gray-700 fw-bolder d-block fs-2qx lh-1 ls-n1 mb-1">4,7</span>
                                     <!--end::Number-->
                                     <!--begin::Desc-->
-                                    <span class="text-gray-500 fw-semibold fs-6">Avg. Score</span>
+                                    <span class="text-gray-500 fw-semibold fs-6">Mojab Card</span>
                                     <!--end::Desc-->
                                 </div>
                                 <!--end::Stats-->
@@ -215,7 +215,7 @@
                                     <span class="text-gray-700 fw-bolder d-block fs-2qx lh-1 ls-n1 mb-1">822</span>
                                     <!--end::Number-->
                                     <!--begin::Desc-->
-                                    <span class="text-gray-500 fw-semibold fs-6">Hours Learned</span>
+                                    <span class="text-gray-500 fw-semibold fs-6">Insurance</span>
                                     <!--end::Desc-->
                                 </div>
                                 <!--end::Stats-->
