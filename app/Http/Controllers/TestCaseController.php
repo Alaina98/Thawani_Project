@@ -41,7 +41,25 @@ class TestCaseController extends Controller
      */
     public function show($id)
     {
-        return $testcase = $this->testcase->find($id);
+
+        {
+            $testcase = testcase::find($id);
+            if(!$testcase)
+            {
+                return response()->json([
+                    'success' => false,
+                    'message' => " Not found"
+                ]);
+            }
+
+            return response()->json([
+                'success' => true,
+                'message' => " successfully",
+                'data' => $id
+            ]);
+
+            return new  testcase($id);
+        }
     }
 
     /**
@@ -67,6 +85,18 @@ class TestCaseController extends Controller
     public function destroy($id)
     {
         $testcase = $this->testcase->find($id);
-        return $testcase->delete();
+        if(!$id)
+        {
+            return response()->json([
+                'success' => false,
+                'message' => "TestCase Not found"
+            ]);
+        }
+
+         $id->delete();
+         return response()->json([
+            'success' => true,
+            'message' => "TestCase deleted successfully"
+        ]);
     }
 }

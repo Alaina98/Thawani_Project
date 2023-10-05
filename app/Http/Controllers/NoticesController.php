@@ -3,9 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Notice;
 
 class NoticesController extends Controller
 {
+
+    protected $notices;
+    public function __construct(){
+        $this->notices = new Notice();
+    }
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +19,7 @@ class NoticesController extends Controller
      */
     public function index()
     {
-        //
+        return $this->notices->all();
     }
 
     /**

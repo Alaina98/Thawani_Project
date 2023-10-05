@@ -1557,7 +1557,7 @@ License: For each use you must have a valid license purchased only from above li
 									<ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 pt-1">
 										<!--begin::Item-->
 										<li class="breadcrumb-item text-muted">
-											<a href="../../demo10/dist/index.html" class="text-muted text-hover-primary">Home</a>
+											<a href="http://127.0.0.1:8000/home" class="text-muted text-hover-primary">Home</a>
 										</li>
 										<!--end::Item-->
 										<!--begin::Item-->
@@ -1582,7 +1582,9 @@ License: For each use you must have a valid license purchased only from above li
 										</li>
 										<!--end::Item-->
 										<!--begin::Item-->
-										<li class="breadcrumb-item text-dark">View User</li>
+										<li class="breadcrumb-item text-dark">
+                                            <a href="http://127.0.0.1:8000/user-view" class="text-muted text-hover-primary">View User</a>
+                                            </li>
 										<!--end::Item-->
 									</ul>
 									<!--end::Breadcrumb-->

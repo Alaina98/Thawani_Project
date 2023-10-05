@@ -21,3 +21,9 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+
+Route::view('/permission', 'permission-list');
+Route::view('/user-list', '/user/list-user');
+Route::view('/user-view', '/user/view-user');
+Route::view('/home', 'welcome');
+

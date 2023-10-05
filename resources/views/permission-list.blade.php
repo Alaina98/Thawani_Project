@@ -35,18 +35,13 @@ License: For each use you must have a valid license purchased only from above li
 		<!--end::Vendor Stylesheets-->
         <link href="/templates/t1/assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="/templates/t1/assets/plugins/custom/vis-timeline/vis-timeline.bundle.css" rel="stylesheet" type="text/css" />
-<!--begin::Vendor Stylesheets(used for this page only)-->
-<link href="templates/t1/assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
-<link href="templates/t1/assets/plugins/custom/vis-timeline/vis-timeline.bundle.css" rel="stylesheet" type="text/css" />
-<!--end::Vendor Stylesheets-->
+
 
 
 		<!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
 		<link href="/templates/t1/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="/templates/t1/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 		<!--end::Global Stylesheets Bundle-->
-
-
 		<script>// Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }</script>
 	</head>
 	<!--end::Head-->
@@ -1553,14 +1548,10 @@ License: For each use you must have a valid license purchased only from above li
 					<!--end::Header-->
 					<!--begin::Content-->
 					<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
-						<!--begin::Toolbar-->
-						<div class="toolbar d-flex flex-stack mb-3 mb-lg-5" id="kt_toolbar">
-							<!--begin::Container-->
-							<div id="kt_toolbar_container" class="container-fluid d-flex flex-stack flex-wrap">
-								<!--begin::Page title-->
+                        <!--begin::Page title-->
 								<div class="page-title d-flex flex-column me-5 py-2">
 									<!--begin::Title-->
-									<h1 class="d-flex flex-column text-dark fw-bold fs-3 mb-0">Dashboard</h1>
+									<h1 class="d-flex flex-column text-dark fw-bold fs-3 mb-0">Permissions List</h1>
 									<!--end::Title-->
 									<!--begin::Breadcrumb-->
 									<ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 pt-1">
@@ -1574,283 +1565,218 @@ License: For each use you must have a valid license purchased only from above li
 											<span class="bullet bg-gray-200 w-5px h-2px"></span>
 										</li>
 										<!--end::Item-->
+										<!--begin::Item-->
+										<li class="breadcrumb-item text-muted">User Management</li>
+										<!--end::Item-->
+										<!--begin::Item-->
+										<li class="breadcrumb-item">
+											<span class="bullet bg-gray-200 w-5px h-2px"></span>
+										</li>
+										<!--end::Item-->
+										<!--begin::Item-->
+										<li class="breadcrumb-item text-dark">
+                                            <a href="http://127.0.0.1:8000/permission" class="text-muted text-hover-primary">Permissions</a>
+                                        </li>
+										<!--end::Item-->
+										<!--begin::Item-->
+										<li class="breadcrumb-item">
+											<span class="bullet bg-gray-200 w-5px h-2px"></span>
+										</li>
+										<!--end::Item-->
 
 									</ul>
 									<!--end::Breadcrumb-->
 								</div>
 								<!--end::Page title-->
-								<!--begin::Actions-->
-								<div class="d-flex align-items-center py-2">
-									<!--begin::Wrapper-->
-									<div class="me-4">
-										<!--begin::Menu-->
-										<a href="#" class="btn btn-sm btn-flex btn-light btn-active-primary fw-bold" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
-										<i class="ki-duotone ki-filter fs-5 text-gray-500 me-1">
-											<span class="path1"></span>
-											<span class="path2"></span>
-										</i>Filter</a>
-										<!--begin::Menu 1-->
-										<div class="menu menu-sub menu-sub-dropdown w-250px w-md-300px" data-kt-menu="true" id="kt_menu_64b77682774dd">
-											<!--begin::Header-->
-											<div class="px-7 py-5">
-												<div class="fs-5 text-dark fw-bold">Filter Options</div>
-											</div>
-											<!--end::Header-->
-											<!--begin::Menu separator-->
-											<div class="separator border-gray-200"></div>
-											<!--end::Menu separator-->
-											<!--begin::Form-->
-											<div class="px-7 py-5">
-												<!--begin::Input group-->
-												<div class="mb-10">
-													<!--begin::Label-->
-													<label class="form-label fw-semibold">Status:</label>
-													<!--end::Label-->
-													<!--begin::Input-->
-													<div>
-														<select class="form-select form-select-solid" multiple="multiple" data-kt-select2="true" data-close-on-select="false" data-placeholder="Select option" data-dropdown-parent="#kt_menu_64b77682774dd" data-allow-clear="true">
-															<option></option>
-															<option value="1">Approved</option>
-															<option value="2">Pending</option>
-															<option value="2">In Process</option>
-															<option value="2">Rejected</option>
-														</select>
-													</div>
-													<!--end::Input-->
-												</div>
-												<!--end::Input group-->
-												<!--begin::Input group-->
-												<div class="mb-10">
-													<!--begin::Label-->
-													<label class="form-label fw-semibold">Member Type:</label>
-													<!--end::Label-->
-													<!--begin::Options-->
-													<div class="d-flex">
-														<!--begin::Options-->
-														<label class="form-check form-check-sm form-check-custom form-check-solid me-5">
-															<input class="form-check-input" type="checkbox" value="1" />
-															<span class="form-check-label">Author</span>
-														</label>
-														<!--end::Options-->
-														<!--begin::Options-->
-														<label class="form-check form-check-sm form-check-custom form-check-solid">
-															<input class="form-check-input" type="checkbox" value="2" checked="checked" />
-															<span class="form-check-label">Customer</span>
-														</label>
-														<!--end::Options-->
-													</div>
-													<!--end::Options-->
-												</div>
-												<!--end::Input group-->
-												<!--begin::Input group-->
-												<div class="mb-10">
-													<!--begin::Label-->
-													<label class="form-label fw-semibold">Notifications:</label>
-													<!--end::Label-->
-													<!--begin::Switch-->
-													<div class="form-check form-switch form-switch-sm form-check-custom form-check-solid">
-														<input class="form-check-input" type="checkbox" value="" name="notifications" checked="checked" />
-														<label class="form-check-label">Enabled</label>
-													</div>
-													<!--end::Switch-->
-												</div>
-												<!--end::Input group-->
-												<!--begin::Actions-->
-												<div class="d-flex justify-content-end">
-													<button type="reset" class="btn btn-sm btn-light btn-active-light-primary me-2" data-kt-menu-dismiss="true">Reset</button>
-													<button type="submit" class="btn btn-sm btn-primary" data-kt-menu-dismiss="true">Apply</button>
-												</div>
-												<!--end::Actions-->
-											</div>
-											<!--end::Form-->
-										</div>
-										<!--end::Menu 1-->
-										<!--end::Menu-->
-									</div>
-									<!--end::Wrapper-->
-									<!--begin::Button-->
-									<a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_create_app" id="kt_toolbar_primary_button">Create</a>
-									<!--end::Button-->
-								</div>
-								<!--end::Actions-->
-							</div>
-							<!--end::Container-->
-						</div>
-						<!--end::Toolbar-->
-						<!--begin::Post-->
+
+
+
+                                <!--begin::Post-->
 						<div class="post d-flex flex-column-fluid" id="kt_post">
-
-                            <!--begin::Container-->
-                        <div id="kt_content_container" class="container-xxl">
-
-
-
-								<!--begin::Modals-->
-								<!--begin::Modal - New Product-->
-								<div class="modal fade" id="kt_modal_add_event" tabindex-="1" aria-hidden="true" data-bs-focus="false">
-									<!--begin::Modal dialog-->
-									<div class="modal-dialog modal-dialog-centered mw-650px">
-										<!--begin::Modal content-->
-										<div class="modal-content">
-											<!--begin::Form-->
-											<form class="form" action="#" id="kt_modal_add_event_form">
-												<!--begin::Modal header-->
-												<div class="modal-header">
-													<!--begin::Modal title-->
-													<h2 class="fw-bold" data-kt-calendar="title">Add Event</h2>
-													<!--end::Modal title-->
-													<!--begin::Close-->
-													<div class="btn btn-icon btn-sm btn-active-icon-primary" id="kt_modal_add_event_close">
-														<i class="ki-duotone ki-cross fs-1">
-															<span class="path1"></span>
-															<span class="path2"></span>
-														</i>
-													</div>
-													<!--end::Close-->
-												</div>
-												<!--end::Modal header-->
-												<!--begin::Modal body-->
-												<div class="modal-body py-10 px-lg-17">
-													<!--begin::Input group-->
-													<div class="fv-row mb-9">
-														<!--begin::Label-->
-														<label class="fs-6 fw-semibold required mb-2">Event Name</label>
-														<!--end::Label-->
-														<!--begin::Input-->
-														<input type="text" class="form-control form-control-solid" placeholder="" name="calendar_event_name" />
-														<!--end::Input-->
-													</div>
-													<!--end::Input group-->
-													<!--begin::Input group-->
-													<div class="fv-row mb-9">
-														<!--begin::Label-->
-														<label class="fs-6 fw-semibold mb-2">Event Description</label>
-														<!--end::Label-->
-														<!--begin::Input-->
-														<input type="text" class="form-control form-control-solid" placeholder="" name="calendar_event_description" />
-														<!--end::Input-->
-													</div>
-													<!--end::Input group-->
-													<!--begin::Input group-->
-													<div class="fv-row mb-9">
-														<!--begin::Label-->
-														<label class="fs-6 fw-semibold mb-2">Event Location</label>
-														<!--end::Label-->
-														<!--begin::Input-->
-														<input type="text" class="form-control form-control-solid" placeholder="" name="calendar_event_location" />
-														<!--end::Input-->
-													</div>
-													<!--end::Input group-->
-													<!--begin::Input group-->
-													<div class="fv-row mb-9">
-														<!--begin::Checkbox-->
-														<label class="form-check form-check-custom form-check-solid">
-															<input class="form-check-input" type="checkbox" value="" id="kt_calendar_datepicker_allday" />
-															<span class="form-check-label fw-semibold" for="kt_calendar_datepicker_allday">All Day</span>
-														</label>
-														<!--end::Checkbox-->
-													</div>
-													<!--end::Input group-->
-													<!--begin::Input group-->
-													<div class="row row-cols-lg-2 g-10">
-														<div class="col">
-															<div class="fv-row mb-9">
-																<!--begin::Label-->
-																<label class="fs-6 fw-semibold mb-2 required">Event Start Date</label>
-																<!--end::Label-->
-																<!--begin::Input-->
-																<input class="form-control form-control-solid" name="calendar_event_start_date" placeholder="Pick a start date" id="kt_calendar_datepicker_start_date" />
-																<!--end::Input-->
-															</div>
-														</div>
-														<div class="col" data-kt-calendar="datepicker">
-															<div class="fv-row mb-9">
-																<!--begin::Label-->
-																<label class="fs-6 fw-semibold mb-2">Event Start Time</label>
-																<!--end::Label-->
-																<!--begin::Input-->
-																<input class="form-control form-control-solid" name="calendar_event_start_time" placeholder="Pick a start time" id="kt_calendar_datepicker_start_time" />
-																<!--end::Input-->
-															</div>
-														</div>
-													</div>
-													<!--end::Input group-->
-													<!--begin::Input group-->
-													<div class="row row-cols-lg-2 g-10">
-														<div class="col">
-															<div class="fv-row mb-9">
-																<!--begin::Label-->
-																<label class="fs-6 fw-semibold mb-2 required">Event End Date</label>
-																<!--end::Label-->
-																<!--begin::Input-->
-																<input class="form-control form-control-solid" name="calendar_event_end_date" placeholder="Pick a end date" id="kt_calendar_datepicker_end_date" />
-																<!--end::Input-->
-															</div>
-														</div>
-														<div class="col" data-kt-calendar="datepicker">
-															<div class="fv-row mb-9">
-																<!--begin::Label-->
-																<label class="fs-6 fw-semibold mb-2">Event End Time</label>
-																<!--end::Label-->
-																<!--begin::Input-->
-																<input class="form-control form-control-solid" name="calendar_event_end_time" placeholder="Pick a end time" id="kt_calendar_datepicker_end_time" />
-																<!--end::Input-->
-															</div>
-														</div>
-													</div>
-													<!--end::Input group-->
-												</div>
-												<!--end::Modal body-->
-												<!--begin::Modal footer-->
-												<div class="modal-footer flex-center">
-													<!--begin::Button-->
-													<button type="reset" id="kt_modal_add_event_cancel" class="btn btn-light me-3">Cancel</button>
-													<!--end::Button-->
-													<!--begin::Button-->
-													<button type="button" id="kt_modal_add_event_submit" class="btn btn-primary">
-														<span class="indicator-label">Submit</span>
-														<span class="indicator-progress">Please wait...
-														<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-													</button>
-													<!--end::Button-->
-												</div>
-												<!--end::Modal footer-->
-											</form>
-											<!--end::Form-->
+							<!--begin::Container-->
+							<div id="kt_content_container" class="container-xxl">
+								<!--begin::Card-->
+								<div class="card card-flush">
+									<!--begin::Card header-->
+									<div class="card-header mt-6">
+										<!--begin::Card title-->
+										<div class="card-title">
+											<!--begin::Search-->
+											<div class="d-flex align-items-center position-relative my-1 me-5">
+												<i class="ki-duotone ki-magnifier fs-3 position-absolute ms-5">
+													<span class="path1"></span>
+													<span class="path2"></span>
+												</i>
+												<input type="text" data-kt-permissions-table-filter="search" class="form-control form-control-solid w-250px ps-13" placeholder="Search Permissions" />
+											</div>
+											<!--end::Search-->
 										</div>
+										<!--end::Card title-->
+										<!--begin::Card toolbar-->
+										<div class="card-toolbar">
+											<!--begin::Button-->
+											<button type="button" class="btn btn-light-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_add_permission">
+											<i class="ki-duotone ki-plus-square fs-3">
+												<span class="path1"></span>
+												<span class="path2"></span>
+												<span class="path3"></span>
+											</i>Add Permission</button>
+											<!--end::Button-->
+										</div>
+										<!--end::Card toolbar-->
 									</div>
+									<!--end::Card header-->
+									<!--begin::Card body-->
+									<div class="card-body pt-0">
+										<!--begin::Table-->
+										<table class="table align-middle table-row-dashed fs-6 gy-5 mb-0" id="kt_permissions_table">
+											<thead>
+												<tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
+													<th class="min-w-125px">Name</th>
+													<th class="min-w-250px">Assigned to</th>
+													<th class="min-w-125px">Created Date</th>
+													<th class="text-end min-w-100px">Actions</th>
+												</tr>
+											</thead>
+											<tbody class="fw-semibold text-gray-600">
+												<tr>
+													<td>User Management</td>
+													<td>
+														<a href="../../demo10/dist/apps/user-management/roles/view.html" class="badge badge-light-primary fs-7 m-1">Administrator</a>
+													</td>
+													<td>20 Jun 2023, 2:40 pm</td>
+													<td class="text-end">
+														<button class="btn btn-icon btn-active-light-primary w-30px h-30px me-3" data-bs-toggle="modal" data-bs-target="#kt_modal_update_permission">
+															<i class="ki-duotone ki-setting-3 fs-3">
+																<span class="path1"></span>
+																<span class="path2"></span>
+																<span class="path3"></span>
+																<span class="path4"></span>
+																<span class="path5"></span>
+															</i>
+														</button>
+														<button class="btn btn-icon btn-active-light-primary w-30px h-30px" data-kt-permissions-table-filter="delete_row">
+															<i class="ki-duotone ki-trash fs-3">
+																<span class="path1"></span>
+																<span class="path2"></span>
+																<span class="path3"></span>
+																<span class="path4"></span>
+																<span class="path5"></span>
+															</i>
+														</button>
+													</td>
+												</tr>
+
+
+												<tr>
+													<td>Reporting</td>
+													<td>
+														<a href="../../demo10/dist/apps/user-management/roles/view.html" class="badge badge-light-primary fs-7 m-1">Administrator</a>
+
+													</td>
+													<td>10 Mar 2023, 9:23 pm</td>
+													<td class="text-end">
+														<button class="btn btn-icon btn-active-light-primary w-30px h-30px me-3" data-bs-toggle="modal" data-bs-target="#kt_modal_update_permission">
+															<i class="ki-duotone ki-setting-3 fs-3">
+																<span class="path1"></span>
+																<span class="path2"></span>
+																<span class="path3"></span>
+																<span class="path4"></span>
+																<span class="path5"></span>
+															</i>
+														</button>
+														<button class="btn btn-icon btn-active-light-primary w-30px h-30px" data-kt-permissions-table-filter="delete_row">
+															<i class="ki-duotone ki-trash fs-3">
+																<span class="path1"></span>
+																<span class="path2"></span>
+																<span class="path3"></span>
+																<span class="path4"></span>
+																<span class="path5"></span>
+															</i>
+														</button>
+													</td>
+												</tr>
+
+
+												<tr>
+													<td>API Controls</td>
+													<td>
+														<a href="../../demo10/dist/apps/user-management/roles/view.html" class="badge badge-light-primary fs-7 m-1">Administrator</a>
+														<a href="../../demo10/dist/apps/user-management/roles/view.html" class="badge badge-light-danger fs-7 m-1">Developer</a>
+													</td>
+													<td>19 Aug 2023, 6:43 am</td>
+													<td class="text-end">
+														<button class="btn btn-icon btn-active-light-primary w-30px h-30px me-3" data-bs-toggle="modal" data-bs-target="#kt_modal_update_permission">
+															<i class="ki-duotone ki-setting-3 fs-3">
+																<span class="path1"></span>
+																<span class="path2"></span>
+																<span class="path3"></span>
+																<span class="path4"></span>
+																<span class="path5"></span>
+															</i>
+														</button>
+														<button class="btn btn-icon btn-active-light-primary w-30px h-30px" data-kt-permissions-table-filter="delete_row">
+															<i class="ki-duotone ki-trash fs-3">
+																<span class="path1"></span>
+																<span class="path2"></span>
+																<span class="path3"></span>
+																<span class="path4"></span>
+																<span class="path5"></span>
+															</i>
+														</button>
+													</td>
+												</tr>
+												<tr>
+													<td>Database Management</td>
+													<td>
+														<a href="../../demo10/dist/apps/user-management/roles/view.html" class="badge badge-light-primary fs-7 m-1">Administrator</a>
+														<a href="../../demo10/dist/apps/user-management/roles/view.html" class="badge badge-light-danger fs-7 m-1">Developer</a>
+													</td>
+													<td>19 Aug 2023, 8:43 pm</td>
+													<td class="text-end">
+														<button class="btn btn-icon btn-active-light-primary w-30px h-30px me-3" data-bs-toggle="modal" data-bs-target="#kt_modal_update_permission">
+															<i class="ki-duotone ki-setting-3 fs-3">
+																<span class="path1"></span>
+																<span class="path2"></span>
+																<span class="path3"></span>
+																<span class="path4"></span>
+																<span class="path5"></span>
+															</i>
+														</button>
+														<button class="btn btn-icon btn-active-light-primary w-30px h-30px" data-kt-permissions-table-filter="delete_row">
+															<i class="ki-duotone ki-trash fs-3">
+																<span class="path1"></span>
+																<span class="path2"></span>
+																<span class="path3"></span>
+																<span class="path4"></span>
+																<span class="path5"></span>
+															</i>
+														</button>
+													</td>
+												</tr>
+
+											</tbody>
+										</table>
+										<!--end::Table-->
+									</div>
+									<!--end::Card body-->
 								</div>
-								<!--end::Modal - New Product-->
-								<!--begin::Modal - New Product-->
-								<div class="modal fade" id="kt_modal_view_event" tabindex="-1" data-bs-focus="false" aria-hidden="true">
+								<!--end::Card-->
+								<!--begin::Modals-->
+								<!--begin::Modal - Add permissions-->
+								<div class="modal fade" id="kt_modal_add_permission" tabindex="-1" aria-hidden="true">
 									<!--begin::Modal dialog-->
 									<div class="modal-dialog modal-dialog-centered mw-650px">
 										<!--begin::Modal content-->
 										<div class="modal-content">
 											<!--begin::Modal header-->
-											<div class="modal-header border-0 justify-content-end">
-												<!--begin::Edit-->
-												<div class="btn btn-icon btn-sm btn-color-gray-400 btn-active-icon-primary me-2" data-bs-toggle="tooltip" data-bs-dismiss="click" title="Edit Event" id="kt_modal_view_event_edit">
-													<i class="ki-duotone ki-pencil fs-2">
-														<span class="path1"></span>
-														<span class="path2"></span>
-													</i>
-												</div>
-												<!--end::Edit-->
-												<!--begin::Edit-->
-												<div class="btn btn-icon btn-sm btn-color-gray-400 btn-active-icon-danger me-2" data-bs-toggle="tooltip" data-bs-dismiss="click" title="Delete Event" id="kt_modal_view_event_delete">
-													<i class="ki-duotone ki-trash fs-2">
-														<span class="path1"></span>
-														<span class="path2"></span>
-														<span class="path3"></span>
-														<span class="path4"></span>
-														<span class="path5"></span>
-													</i>
-												</div>
-												<!--end::Edit-->
+											<div class="modal-header">
+												<!--begin::Modal title-->
+												<h2 class="fw-bold">Add a Permission</h2>
+												<!--end::Modal title-->
 												<!--begin::Close-->
-												<div class="btn btn-icon btn-sm btn-color-gray-500 btn-active-icon-primary" data-bs-toggle="tooltip" title="Hide Event" data-bs-dismiss="modal">
-													<i class="ki-duotone ki-cross fs-2x">
+												<div class="btn btn-icon btn-sm btn-active-icon-primary" data-kt-permissions-modal-action="close">
+													<i class="ki-duotone ki-cross fs-1">
 														<span class="path1"></span>
 														<span class="path2"></span>
 													</i>
@@ -1859,346 +1785,160 @@ License: For each use you must have a valid license purchased only from above li
 											</div>
 											<!--end::Modal header-->
 											<!--begin::Modal body-->
-											<div class="modal-body pt-0 pb-20 px-lg-17">
-												<!--begin::Row-->
-												<div class="d-flex">
-													<!--begin::Icon-->
-													<i class="ki-duotone ki-calendar-8 fs-1 text-muted me-5">
-														<span class="path1"></span>
-														<span class="path2"></span>
-														<span class="path3"></span>
-														<span class="path4"></span>
-														<span class="path5"></span>
-														<span class="path6"></span>
-													</i>
-													<!--end::Icon-->
-													<div class="mb-9">
-														<!--begin::Event name-->
-														<div class="d-flex align-items-center mb-2">
-															<span class="fs-3 fw-bold me-3" data-kt-calendar="event_name"></span>
-															<span class="badge badge-light-success" data-kt-calendar="all_day"></span>
-														</div>
-														<!--end::Event name-->
-														<!--begin::Event description-->
-														<div class="fs-6" data-kt-calendar="event_description"></div>
-														<!--end::Event description-->
+											<div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
+												<!--begin::Form-->
+												<form id="kt_modal_add_permission_form" class="form" action="#">
+													<!--begin::Input group-->
+													<div class="fv-row mb-7">
+														<!--begin::Label-->
+														<label class="fs-6 fw-semibold form-label mb-2">
+															<span class="required">Permission Name</span>
+															<span class="ms-2" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-html="true" data-bs-content="Permission names is required to be unique.">
+																<i class="ki-duotone ki-information fs-7">
+																	<span class="path1"></span>
+																	<span class="path2"></span>
+																	<span class="path3"></span>
+																</i>
+															</span>
+														</label>
+														<!--end::Label-->
+														<!--begin::Input-->
+														<input class="form-control form-control-solid" placeholder="Enter a permission name" name="permission_name" />
+														<!--end::Input-->
 													</div>
-												</div>
-												<!--end::Row-->
-												<!--begin::Row-->
-												<div class="d-flex align-items-center mb-2">
-													<!--begin::Bullet-->
-													<span class="bullet bullet-dot h-10px w-10px bg-success ms-2 me-7"></span>
-													<!--end::Bullet-->
-													<!--begin::Event start date/time-->
-													<div class="fs-6">
-														<span class="fw-bold">Starts</span>
-														<span data-kt-calendar="event_start_date"></span>
+													<!--end::Input group-->
+													<!--begin::Input group-->
+													<div class="fv-row mb-7">
+														<!--begin::Checkbox-->
+														<label class="form-check form-check-custom form-check-solid me-9">
+															<input class="form-check-input" type="checkbox" value="" name="permissions_core" id="kt_permissions_core" />
+															<span class="form-check-label" for="kt_permissions_core">Set as core permission</span>
+														</label>
+														<!--end::Checkbox-->
 													</div>
-													<!--end::Event start date/time-->
-												</div>
-												<!--end::Row-->
-												<!--begin::Row-->
-												<div class="d-flex align-items-center mb-9">
-													<!--begin::Bullet-->
-													<span class="bullet bullet-dot h-10px w-10px bg-danger ms-2 me-7"></span>
-													<!--end::Bullet-->
-													<!--begin::Event end date/time-->
-													<div class="fs-6">
-														<span class="fw-bold">Ends</span>
-														<span data-kt-calendar="event_end_date"></span>
+													<!--end::Input group-->
+													<!--begin::Disclaimer-->
+													<div class="text-gray-600">Permission set as a
+													<strong class="me-1">Core Permission</strong>will be locked and
+													<strong class="me-1">not editable</strong>in future</div>
+													<!--end::Disclaimer-->
+													<!--begin::Actions-->
+													<div class="text-center pt-15">
+														<button type="reset" class="btn btn-light me-3" data-kt-permissions-modal-action="cancel">Discard</button>
+														<button type="submit" class="btn btn-primary" data-kt-permissions-modal-action="submit">
+															<span class="indicator-label">Submit</span>
+															<span class="indicator-progress">Please wait...
+															<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+														</button>
 													</div>
-													<!--end::Event end date/time-->
-												</div>
-												<!--end::Row-->
-												<!--begin::Row-->
-												<div class="d-flex align-items-center">
-													<!--begin::Icon-->
-													<i class="ki-duotone ki-geolocation fs-1 text-muted me-5">
-														<span class="path1"></span>
-														<span class="path2"></span>
-													</i>
-													<!--end::Icon-->
-													<!--begin::Event location-->
-													<div class="fs-6" data-kt-calendar="event_location"></div>
-													<!--end::Event location-->
-												</div>
-												<!--end::Row-->
+													<!--end::Actions-->
+												</form>
+												<!--end::Form-->
 											</div>
 											<!--end::Modal body-->
 										</div>
+										<!--end::Modal content-->
 									</div>
+									<!--end::Modal dialog-->
 								</div>
-								<!--end::Modal - New Product-->
+								<!--end::Modal - Add permissions-->
+								<!--begin::Modal - Update permissions-->
+								<div class="modal fade" id="kt_modal_update_permission" tabindex="-1" aria-hidden="true">
+									<!--begin::Modal dialog-->
+									<div class="modal-dialog modal-dialog-centered mw-650px">
+										<!--begin::Modal content-->
+										<div class="modal-content">
+											<!--begin::Modal header-->
+											<div class="modal-header">
+												<!--begin::Modal title-->
+												<h2 class="fw-bold">Update Permission</h2>
+												<!--end::Modal title-->
+												<!--begin::Close-->
+												<div cl
+                                                ass="btn btn-icon btn-sm btn-active-icon-primary" data-kt-permissions-modal-action="close">
+													<i class="ki-duotone ki-cross fs-1">
+														<span class="path1"></span>
+														<span class="path2"></span>
+													</i>
+												</div>
+												<!--end::Close-->
+											</div>
+											<!--end::Modal header-->
+											<!--begin::Modal body-->
+											<div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
+												<!--begin::Notice-->
+												<!--begin::Notice-->
+												<div class="notice d-flex bg-light-warning rounded border-warning border border-dashed mb-9 p-6">
+													<!--begin::Icon-->
+													<i class="ki-duotone ki-information fs-2tx text-warning me-4">
+														<span class="path1"></span>
+														<span class="path2"></span>
+														<span class="path3"></span>
+													</i>
+													<!--end::Icon-->
+													<!--begin::Wrapper-->
+													<div class="d-flex flex-stack flex-grow-1">
+														<!--begin::Content-->
+														<div class="fw-semibold">
+															<div class="fs-6 text-gray-700">
+															<strong class="me-1">Warning!</strong>By editing the permission name, you might break the system permissions functionality. Please ensure you're absolutely certain before proceeding.</div>
+														</div>
+														<!--end::Content-->
+													</div>
+													<!--end::Wrapper-->
+												</div>
+												<!--end::Notice-->
+												<!--end::Notice-->
+												<!--begin::Form-->
+												<form id="kt_modal_update_permission_form" class="form" action="#">
+													<!--begin::Input group-->
+													<div class="fv-row mb-7">
+														<!--begin::Label-->
+														<label class="fs-6 fw-semibold form-label mb-2">
+															<span class="required">Permission Name</span>
+															<span class="ms-2" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-html="true" data-bs-content="Permission names is required to be unique.">
+																<i class="ki-duotone ki-information fs-7">
+																	<span class="path1"></span>
+																	<span class="path2"></span>
+																	<span class="path3"></span>
+																</i>
+															</span>
+														</label>
+														<!--end::Label-->
+														<!--begin::Input-->
+														<input class="form-control form-control-solid" placeholder="Enter a permission name" name="permission_name" />
+														<!--end::Input-->
+													</div>
+													<!--end::Input group-->
+													<!--begin::Actions-->
+													<div class="text-center pt-15">
+														<button type="reset" class="btn btn-light me-3" data-kt-permissions-modal-action="cancel">Discard</button>
+														<button type="submit" class="btn btn-primary" data-kt-permissions-modal-action="submit">
+															<span class="indicator-label">Submit</span>
+															<span class="indicator-progress">Please wait...
+															<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+														</button>
+													</div>
+													<!--end::Actions-->
+												</form>
+												<!--end::Form-->
+											</div>
+											<!--end::Modal body-->
+										</div>
+										<!--end::Modal content-->
+									</div>
+									<!--end::Modal dialog-->
+								</div>
+								<!--end::Modal - Update permissions-->
 								<!--end::Modals-->
-                        </div>
+							</div>
 							<!--end::Container-->
 						</div>
-                        <div class="post d-flex flex-column-fluid" id="kt_post">
-
-<!--begin::Container-->
-<div id="kt_content_container" class="container-xxl">
-
-@include('layouts.active')
-
-    <div class="card">
-    @include('layouts.testcasebox')
-    </div>
-</div>
-
-    @include('layouts.projectstate')
-
-    <!--begin::Modals-->
-    <!--begin::Modal - New Product-->
-    <div class="modal fade" id="kt_modal_add_event" tabindex-="1" aria-hidden="true" data-bs-focus="false">
-        <!--begin::Modal dialog-->
-        <div class="modal-dialog modal-dialog-centered mw-650px">
-            <!--begin::Modal content-->
-            <div class="modal-content">
-                <!--begin::Form-->
-                <form class="form" action="#" id="kt_modal_add_event_form">
-                    <!--begin::Modal header-->
-                    <div class="modal-header">
-                        <!--begin::Modal title-->
-                        <h2 class="fw-bold" data-kt-calendar="title">Add Event</h2>
-                        <!--end::Modal title-->
-                        <!--begin::Close-->
-                        <div class="btn btn-icon btn-sm btn-active-icon-primary" id="kt_modal_add_event_close">
-                            <i class="ki-duotone ki-cross fs-1">
-                                <span class="path1"></span>
-                                <span class="path2"></span>
-                            </i>
-                        </div>
-                        <!--end::Close-->
-                    </div>
-                    <!--end::Modal header-->
-                    <!--begin::Modal body-->
-                    <div class="modal-body py-10 px-lg-17">
-                        <!--begin::Input group-->
-                        <div class="fv-row mb-9">
-                            <!--begin::Label-->
-                            <label class="fs-6 fw-semibold required mb-2">Event Name</label>
-                            <!--end::Label-->
-                            <!--begin::Input-->
-                            <input type="text" class="form-control form-control-solid" placeholder="" name="calendar_event_name" />
-                            <!--end::Input-->
-                        </div>
-                        <!--end::Input group-->
-                        <!--begin::Input group-->
-                        <div class="fv-row mb-9">
-                            <!--begin::Label-->
-                            <label class="fs-6 fw-semibold mb-2">Event Description</label>
-                            <!--end::Label-->
-                            <!--begin::Input-->
-                            <input type="text" class="form-control form-control-solid" placeholder="" name="calendar_event_description" />
-                            <!--end::Input-->
-                        </div>
-                        <!--end::Input group-->
-                        <!--begin::Input group-->
-                        <div class="fv-row mb-9">
-                            <!--begin::Label-->
-                            <label class="fs-6 fw-semibold mb-2">Event Location</label>
-                            <!--end::Label-->
-                            <!--begin::Input-->
-                            <input type="text" class="form-control form-control-solid" placeholder="" name="calendar_event_location" />
-                            <!--end::Input-->
-                        </div>
-                        <!--end::Input group-->
-                        <!--begin::Input group-->
-                        <div class="fv-row mb-9">
-                            <!--begin::Checkbox-->
-                            <label class="form-check form-check-custom form-check-solid">
-                                <input class="form-check-input" type="checkbox" value="" id="kt_calendar_datepicker_allday" />
-                                <span class="form-check-label fw-semibold" for="kt_calendar_datepicker_allday">All Day</span>
-                            </label>
-                            <!--end::Checkbox-->
-                        </div>
-                        <!--end::Input group-->
-                        <!--begin::Input group-->
-                        <div class="row row-cols-lg-2 g-10">
-                            <div class="col">
-                                <div class="fv-row mb-9">
-                                    <!--begin::Label-->
-                                    <label class="fs-6 fw-semibold mb-2 required">Event Start Date</label>
-                                    <!--end::Label-->
-                                    <!--begin::Input-->
-                                    <input class="form-control form-control-solid" name="calendar_event_start_date" placeholder="Pick a start date" id="kt_calendar_datepicker_start_date" />
-                                    <!--end::Input-->
-                                </div>
-                            </div>
-                            <div class="col" data-kt-calendar="datepicker">
-                                <div class="fv-row mb-9">
-                                    <!--begin::Label-->
-                                    <label class="fs-6 fw-semibold mb-2">Event Start Time</label>
-                                    <!--end::Label-->
-                                    <!--begin::Input-->
-                                    <input class="form-control form-control-solid" name="calendar_event_start_time" placeholder="Pick a start time" id="kt_calendar_datepicker_start_time" />
-                                    <!--end::Input-->
-                                </div>
-                            </div>
-                        </div>
-                        <!--end::Input group-->
-                        <!--begin::Input group-->
-                        <div class="row row-cols-lg-2 g-10">
-                            <div class="col">
-                                <div class="fv-row mb-9">
-                                    <!--begin::Label-->
-                                    <label class="fs-6 fw-semibold mb-2 required">Event End Date</label>
-                                    <!--end::Label-->
-                                    <!--begin::Input-->
-                                    <input class="form-control form-control-solid" name="calendar_event_end_date" placeholder="Pick a end date" id="kt_calendar_datepicker_end_date" />
-                                    <!--end::Input-->
-                                </div>
-                            </div>
-                            <div class="col" data-kt-calendar="datepicker">
-                                <div class="fv-row mb-9">
-                                    <!--begin::Label-->
-                                    <label class="fs-6 fw-semibold mb-2">Event End Time</label>
-                                    <!--end::Label-->
-                                    <!--begin::Input-->
-                                    <input class="form-control form-control-solid" name="calendar_event_end_time" placeholder="Pick a end time" id="kt_calendar_datepicker_end_time" />
-                                    <!--end::Input-->
-                                </div>
-                            </div>
-                        </div>
-                        <!--end::Input group-->
-                    </div>
-                    <!--end::Modal body-->
-                    <!--begin::Modal footer-->
-                    <div class="modal-footer flex-center">
-                        <!--begin::Button-->
-                        <button type="reset" id="kt_modal_add_event_cancel" class="btn btn-light me-3">Cancel</button>
-                        <!--end::Button-->
-                        <!--begin::Button-->
-                        <button type="button" id="kt_modal_add_event_submit" class="btn btn-primary">
-                            <span class="indicator-label">Submit</span>
-                            <span class="indicator-progress">Please wait...
-                            <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-                        </button>
-                        <!--end::Button-->
-                    </div>
-                    <!--end::Modal footer-->
-                </form>
-                <!--end::Form-->
-            </div>
-        </div>
-    </div>
-    <!--end::Modal - New Product-->
-    <!--begin::Modal - New Product-->
-    <div class="modal fade" id="kt_modal_view_event" tabindex="-1" data-bs-focus="false" aria-hidden="true">
-        <!--begin::Modal dialog-->
-        <div class="modal-dialog modal-dialog-centered mw-650px">
-            <!--begin::Modal content-->
-            <div class="modal-content">
-                <!--begin::Modal header-->
-                <div class="modal-header border-0 justify-content-end">
-                    <!--begin::Edit-->
-                    <div class="btn btn-icon btn-sm btn-color-gray-400 btn-active-icon-primary me-2" data-bs-toggle="tooltip" data-bs-dismiss="click" title="Edit Event" id="kt_modal_view_event_edit">
-                        <i class="ki-duotone ki-pencil fs-2">
-                            <span class="path1"></span>
-                            <span class="path2"></span>
-                        </i>
-                    </div>
-                    <!--end::Edit-->
-                    <!--begin::Edit-->
-                    <div class="btn btn-icon btn-sm btn-color-gray-400 btn-active-icon-danger me-2" data-bs-toggle="tooltip" data-bs-dismiss="click" title="Delete Event" id="kt_modal_view_event_delete">
-                        <i class="ki-duotone ki-trash fs-2">
-                            <span class="path1"></span>
-                            <span class="path2"></span>
-                            <span class="path3"></span>
-                            <span class="path4"></span>
-                            <span class="path5"></span>
-                        </i>
-                    </div>
-                    <!--end::Edit-->
-                    <!--begin::Close-->
-                    <div class="btn btn-icon btn-sm btn-color-gray-500 btn-active-icon-primary" data-bs-toggle="tooltip" title="Hide Event" data-bs-dismiss="modal">
-                        <i class="ki-duotone ki-cross fs-2x">
-                            <span class="path1"></span>
-                            <span class="path2"></span>
-                        </i>
-                    </div>
-                    <!--end::Close-->
-                </div>
-                <!--end::Modal header-->
-                <!--begin::Modal body-->
-                <div class="modal-body pt-0 pb-20 px-lg-17">
-                    <!--begin::Row-->
-                    <div class="d-flex">
-                        <!--begin::Icon-->
-                        <i class="ki-duotone ki-calendar-8 fs-1 text-muted me-5">
-                            <span class="path1"></span>
-                            <span class="path2"></span>
-                            <span class="path3"></span>
-                            <span class="path4"></span>
-                            <span class="path5"></span>
-                            <span class="path6"></span>
-                        </i>
-                        <!--end::Icon-->
-                        <div class="mb-9">
-                            <!--begin::Event name-->
-                            <div class="d-flex align-items-center mb-2">
-                                <span class="fs-3 fw-bold me-3" data-kt-calendar="event_name"></span>
-                                <span class="badge badge-light-success" data-kt-calendar="all_day"></span>
-                            </div>
-                            <!--end::Event name-->
-                            <!--begin::Event description-->
-                            <div class="fs-6" data-kt-calendar="event_description"></div>
-                            <!--end::Event description-->
-                        </div>
-                    </div>
-                    <!--end::Row-->
-                    <!--begin::Row-->
-                    <div class="d-flex align-items-center mb-2">
-                        <!--begin::Bullet-->
-                        <span class="bullet bullet-dot h-10px w-10px bg-success ms-2 me-7"></span>
-                        <!--end::Bullet-->
-                        <!--begin::Event start date/time-->
-                        <div class="fs-6">
-                            <span class="fw-bold">Starts</span>
-                            <span data-kt-calendar="event_start_date"></span>
-                        </div>
-                        <!--end::Event start date/time-->
-                    </div>
-                    <!--end::Row-->
-                    <!--begin::Row-->
-                    <div class="d-flex align-items-center mb-9">
-                        <!--begin::Bullet-->
-                        <span class="bullet bullet-dot h-10px w-10px bg-danger ms-2 me-7"></span>
-                        <!--end::Bullet-->
-                        <!--begin::Event end date/time-->
-                        <div class="fs-6">
-                            <span class="fw-bold">Ends</span>
-                            <span data-kt-calendar="event_end_date"></span>
-                        </div>
-                        <!--end::Event end date/time-->
-                    </div>
-                    <!--end::Row-->
-                    <!--begin::Row-->
-                    <div class="d-flex align-items-center">
-                        <!--begin::Icon-->
-                        <i class="ki-duotone ki-geolocation fs-1 text-muted me-5">
-                            <span class="path1"></span>
-                            <span class="path2"></span>
-                        </i>
-                        <!--end::Icon-->
-                        <!--begin::Event location-->
-                        <div class="fs-6" data-kt-calendar="event_location"></div>
-                        <!--end::Event location-->
-                    </div>
-                    <!--end::Row-->
-                </div>
-                <!--end::Modal body-->
-            </div>
-        </div>
-    </div>
-    <!--end::Modal - New Product-->
-    <!--end::Modals-->
-</div>
-<!--end::Container-->
-
-
 						<!--end::Post-->
+
+
+
+
 					</div>
 					<!--end::Content-->
 					<!--begin::Footer-->
