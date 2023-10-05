@@ -25,5 +25,7 @@ Route::get('/dashboard', function () {
 Route::view('/permission', 'permission-list');
 Route::view('/user-list', '/user/list-user');
 Route::view('/user-view', '/user/view-user');
+Route::view('/role-view', 'view-role');
+Route::view('/role-list', 'RoleList');
 Route::view('/home', 'welcome');
 

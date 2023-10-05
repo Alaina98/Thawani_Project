@@ -992,7 +992,7 @@
                                 <!--begin:Menu item-->
                                 <div class="menu-item">
                                     <!--begin:Menu link-->
-                                    <a class="menu-link" href="../../demo10/dist/apps/user-management/roles/list.html">
+                                    <a class="menu-link" href="http://127.0.0.1:8000/role-list">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1004,7 +1004,7 @@
                                 <!--begin:Menu item-->
                                 <div class="menu-item">
                                     <!--begin:Menu link-->
-                                    <a class="menu-link" href="../../demo10/dist/apps/user-management/roles/view.html">
+                                    <a class="menu-link" href="http://127.0.0.1:8000/role-view">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
