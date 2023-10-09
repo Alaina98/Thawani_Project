@@ -28,4 +28,5 @@ Route::view('/user-view', '/user/view-user');
 Route::view('/role-view', 'view-role');
 Route::view('/role-list', 'RoleList');
 Route::view('/home', 'welcome');
+Route::view('/index-user', '/user_pages/dashboard');
 
