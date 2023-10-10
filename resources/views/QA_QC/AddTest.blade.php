@@ -13,7 +13,7 @@ License: For each use you must have a valid license purchased only from above li
 -->
 <html lang="en">
 	<!--begin::Head-->
-	<head><base href=""/>
+	<head><base href="../../../"/>
 		<title>Metronic - The World's #1 Selling Bootstrap Admin Template by Keenthemes</title>
 		<meta charset="utf-8" />
 		<meta name="description" content="The most advanced Bootstrap 5 Admin Theme with 40 unique prebuilt layouts on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel versions. Grab your copy now and get life-time updates for free." />
@@ -30,23 +30,12 @@ License: For each use you must have a valid license purchased only from above li
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
 		<!--end::Fonts-->
 		<!--begin::Vendor Stylesheets(used for this page only)-->
-		<link href="/templates/t1/assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="/templates/t1/assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
 		<!--end::Vendor Stylesheets-->
-        <link href="/templates/t1/assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="/templates/t1/assets/plugins/custom/vis-timeline/vis-timeline.bundle.css" rel="stylesheet" type="text/css" />
-<!--begin::Vendor Stylesheets(used for this page only)-->
-<link href="templates/t1/assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
-<link href="templates/t1/assets/plugins/custom/vis-timeline/vis-timeline.bundle.css" rel="stylesheet" type="text/css" />
-<!--end::Vendor Stylesheets-->
-
-
 		<!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
 		<link href="/templates/t1/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="/templates/t1/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 		<!--end::Global Stylesheets Bundle-->
-
-
 		<script>// Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }</script>
 	</head>
 	<!--end::Head-->
@@ -61,7 +50,7 @@ License: For each use you must have a valid license purchased only from above li
 			<!--begin::Page-->
 			<div class="page d-flex flex-row flex-column-fluid">
 				<!--begin::Aside-->
-                @include('layouts.aside')
+				@include('layouts.aside')
 				<!--end::Aside-->
 				<!--begin::Wrapper-->
 				<div class="wrapper d-flex flex-column flex-row-fluid" id="kt_wrapper">
@@ -778,7 +767,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Menu-->
 									<div class="menu menu-sub menu-sub-dropdown menu-column w-350px w-lg-375px" data-kt-menu="true" id="kt_menu_notifications">
 										<!--begin::Heading-->
-										<div class="d-flex flex-column bgi-no-repeat rounded-top" style="background-image:url('assets/media/misc/menu-header-bg.jpg')">
+										<div class="d-flex flex-column bgi-no-repeat rounded-top" style="background-image:url('/templates/t1/assets/media/misc/menu-header-bg.jpg')">
 											<!--begin::Title-->
 											<h3 class="text-white fw-semibold px-9 mt-10 mb-6">Notifications
 											<span class="fs-8 opacity-75 ps-3">24 reports</span></h3>
@@ -955,7 +944,7 @@ License: For each use you must have a valid license purchased only from above li
 															<!--end::Symbol-->
 															<!--begin::Title-->
 															<div class="mb-0 me-2">
-																<a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bold">Banner Assets</a>
+																<a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bold">Banner /templates/t1/assets</a>
 																<div class="text-gray-400 fs-7">Collection of banner images</div>
 															</div>
 															<!--end::Title-->
@@ -1001,7 +990,7 @@ License: For each use you must have a valid license purchased only from above li
 															<!--end::Symbol-->
 															<!--begin::Title-->
 															<div class="mb-0 me-2">
-																<a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bold">Icon Assets</a>
+																<a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bold">Icon /templates/t1/assets</a>
 																<div class="text-gray-400 fs-7">Collection of SVG icons</div>
 															</div>
 															<!--end::Title-->
@@ -1560,13 +1549,13 @@ License: For each use you must have a valid license purchased only from above li
 								<!--begin::Page title-->
 								<div class="page-title d-flex flex-column me-5 py-2">
 									<!--begin::Title-->
-									<h1 class="d-flex flex-column text-dark fw-bold fs-3 mb-0">Dashboard</h1>
+									<h1 class="d-flex flex-column text-dark fw-bold fs-3 mb-0">TestCase Form</h1>
 									<!--end::Title-->
 									<!--begin::Breadcrumb-->
 									<ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 pt-1">
 										<!--begin::Item-->
 										<li class="breadcrumb-item text-muted">
-											<a href="http://127.0.0.1:8000/home" class="text-muted text-hover-primary">Home</a>
+											<a href="../../demo10/dist/index.html" class="text-muted text-hover-primary">Home</a>
 										</li>
 										<!--end::Item-->
 										<!--begin::Item-->
@@ -1574,7 +1563,19 @@ License: For each use you must have a valid license purchased only from above li
 											<span class="bullet bg-gray-200 w-5px h-2px"></span>
 										</li>
 										<!--end::Item-->
+										<!--begin::Item-->
+										<li class="breadcrumb-item text-muted">TestCase Form</li>
+										<!--end::Item-->
 
+
+										<!--begin::Item-->
+										<li class="breadcrumb-item">
+											<span class="bullet bg-gray-200 w-5px h-2px"></span>
+										</li>
+										<!--end::Item-->
+										<!--begin::Item-->
+										<li class="breadcrumb-item text-dark">Add TestCase</li>
+										<!--end::Item-->
 									</ul>
 									<!--end::Breadcrumb-->
 								</div>
@@ -1590,7 +1591,7 @@ License: For each use you must have a valid license purchased only from above li
 											<span class="path2"></span>
 										</i>Filter</a>
 										<!--begin::Menu 1-->
-										<div class="menu menu-sub menu-sub-dropdown w-250px w-md-300px" data-kt-menu="true" id="kt_menu_64b77682774dd">
+										<div class="menu menu-sub menu-sub-dropdown w-250px w-md-300px" data-kt-menu="true" id="kt_menu_64b7766e510c7">
 											<!--begin::Header-->
 											<div class="px-7 py-5">
 												<div class="fs-5 text-dark fw-bold">Filter Options</div>
@@ -1608,7 +1609,7 @@ License: For each use you must have a valid license purchased only from above li
 													<!--end::Label-->
 													<!--begin::Input-->
 													<div>
-														<select class="form-select form-select-solid" multiple="multiple" data-kt-select2="true" data-close-on-select="false" data-placeholder="Select option" data-dropdown-parent="#kt_menu_64b77682774dd" data-allow-clear="true">
+														<select class="form-select form-select-solid" multiple="multiple" data-kt-select2="true" data-close-on-select="false" data-placeholder="Select option" data-dropdown-parent="#kt_menu_64b7766e510c7" data-allow-clear="true">
 															<option></option>
 															<option value="1">Approved</option>
 															<option value="2">Pending</option>
@@ -1679,525 +1680,203 @@ License: For each use you must have a valid license purchased only from above li
 						<!--end::Toolbar-->
 						<!--begin::Post-->
 						<div class="post d-flex flex-column-fluid" id="kt_post">
+							<!--begin::Container-->
+							<div id="kt_content_container" class="container-xxl">
+								<!--begin::Form-->
+								<form id="kt_ecommerce_add_product_form" class="form d-flex flex-column flex-lg-row" data-kt-redirect="../../demo10/dist/apps/ecommerce/catalog/products.html">
+									<!--begin::Aside column-->
 
-                            <!--begin::Container-->
-                        <div id="kt_content_container" class="container-xxl">
+									<!--end::Aside column-->
+									<!--begin::Main column-->
+									<div class="d-flex flex-column flex-row-fluid gap-7 gap-lg-10">
+										<!--begin:::Tabs-->
+										<ul class="nav nav-custom nav-tabs nav-line-tabs nav-line-tabs-2x border-0 fs-4 fw-semibold mb-n2">
+											<!--begin:::Tab item-->
+											<li class="nav-item">
+												<a class="nav-link text-active-primary pb-4 active" data-bs-toggle="tab" href="#kt_ecommerce_add_product_general">General</a>
+											</li>
+											<!--end:::Tab item-->
+											<!--begin:::Tab item-->
 
-
-
-								<!--begin::Modals-->
-								<!--begin::Modal - New Product-->
-								<div class="modal fade" id="kt_modal_add_event" tabindex-="1" aria-hidden="true" data-bs-focus="false">
-									<!--begin::Modal dialog-->
-									<div class="modal-dialog modal-dialog-centered mw-650px">
-										<!--begin::Modal content-->
-										<div class="modal-content">
-											<!--begin::Form-->
-											<form class="form" action="#" id="kt_modal_add_event_form">
-												<!--begin::Modal header-->
-												<div class="modal-header">
-													<!--begin::Modal title-->
-													<h2 class="fw-bold" data-kt-calendar="title">Add Event</h2>
-													<!--end::Modal title-->
-													<!--begin::Close-->
-													<div class="btn btn-icon btn-sm btn-active-icon-primary" id="kt_modal_add_event_close">
-														<i class="ki-duotone ki-cross fs-1">
-															<span class="path1"></span>
-															<span class="path2"></span>
-														</i>
+											<!--end:::Tab item-->
+										</ul>
+										<!--end:::Tabs-->
+										<!--begin::Tab content-->
+										<div class="tab-content">
+											<!--begin::Tab pane-->
+											<div class="tab-pane fade show active" id="kt_ecommerce_add_product_general" role="tab-panel">
+												<div class="d-flex flex-column gap-7 gap-lg-10">
+													<!--begin::General options-->
+													<div class="card card-flush py-4">
+														<!--begin::Card header-->
+														<div class="card-header">
+															<div class="card-title">
+																<h2>TestCase Form:</h2>
+															</div>
+														</div>
+														<!--end::Card header-->
+														<!--begin::Card body-->
+														<div class="card-body pt-0">
+															<!--begin::Input group-->
+															<div class="mb-10 fv-row">
+																<!--begin::Label-->
+																<label class="required form-label">Title</label>
+																<!--end::Label-->
+																<!--begin::Input-->
+																<input type="text" name="product_name" class="form-control mb-2" placeholder="Title" value="" />
+																<!--end::Input-->
+																<!--begin::Description-->
+																<div class="text-muted fs-7">Title of TestCase is required and recommended.</div>
+																<!--end::Description-->
+															</div>
+															<!--end::Input group-->
+															<!--begin::Input group-->
+															<div>
+																<!--begin::Label-->
+																<label class="form-label">Description</label>
+																<!--end::Label-->
+																<!--begin::Editor-->
+																<div id="kt_ecommerce_add_product_description" name="kt_ecommerce_add_product_description" class="min-h-200px mb-2"></div>
+																<!--end::Editor-->
+																<!--begin::Description-->
+																<div class="text-muted fs-7">Set a description to the TestCase for better understanding.</div>
+																<!--end::Description-->
+															</div>
+															<!--end::Input group-->
+														</div>
+														<!--end::Card header-->
 													</div>
-													<!--end::Close-->
+													<!--end::General options-->
+													<!--begin::Media-->
+													<div class="card card-flush py-4">
+														<!--begin::Card header-->
+														<div class="card-header">
+															<div class="card-title">
+																<h2>Media</h2>
+															</div>
+														</div>
+														<!--end::Card header-->
+														<!--begin::Card body-->
+														<div class="card-body pt-0">
+															<!--begin::Input group-->
+															<div class="fv-row mb-2">
+																<!--begin::Dropzone-->
+																<div class="dropzone" id="kt_ecommerce_add_product_media">
+																	<!--begin::Message-->
+																	<div class="dz-message needsclick">
+																		<!--begin::Icon-->
+																		<i class="ki-duotone ki-file-up text-primary fs-3x">
+																			<span class="path1"></span>
+																			<span class="path2"></span>
+																		</i>
+																		<!--end::Icon-->
+																		<!--begin::Info-->
+																		<div class="ms-4">
+																			<h3 class="fs-5 fw-bold text-gray-900 mb-1">Drop files here or click to upload.</h3>
+																			<span class="fs-7 fw-semibold text-gray-400">Upload up to 10 files</span>
+																		</div>
+																		<!--end::Info-->
+																	</div>
+																</div>
+																<!--end::Dropzone-->
+															</div>
+															<!--end::Input group-->
+															<!--begin::Description-->
+															<div class="text-muted fs-7">Set the TestCase screenshout.</div>
+															<!--end::Description-->
+														</div>
+														<!--end::Card header-->
+													</div>
+													<!--end::Media-->
+													<!--begin::Pricing-->
+													<div class="card card-flush py-4">
+														<!--begin::Card header-->
+														<div class="card-header">
+
+														</div>
+														<!--end::Card header-->
+														<!--begin::Card body-->
+														<div class="card-body pt-0">
+															<!--begin::Input group-->
+
+															<!--end::Input group-->
+															<!--begin::Input group-->
+
+															<!--end::Input group-->
+															<!--begin::Input group-->
+															<div class="d-none mb-10 fv-row" id="kt_ecommerce_add_product_discount_percentage">
+																<!--begin::Label-->
+																<label class="form-label">Set Discount Percentage</label>
+																<!--end::Label-->
+																<!--begin::Slider-->
+																<div class="d-flex flex-column text-center mb-5">
+																	<div class="d-flex align-items-start justify-content-center mb-7">
+																		<span class="fw-bold fs-3x" id="kt_ecommerce_add_product_discount_label">0</span>
+																		<span class="fw-bold fs-4 mt-1 ms-2">%</span>
+																	</div>
+																	<div id="kt_ecommerce_add_product_discount_slider" class="noUi-sm"></div>
+																</div>
+																<!--end::Slider-->
+																<!--begin::Description-->
+																<div class="text-muted fs-7">Set a percentage discount to be applied on this product.</div>
+																<!--end::Description-->
+															</div>
+															<!--end::Input group-->
+															<!--begin::Input group-->
+															<div class="d-none mb-10 fv-row" id="kt_ecommerce_add_product_discount_fixed">
+																<!--begin::Label-->
+																<label class="form-label">Fixed Discounted Price</label>
+																<!--end::Label-->
+																<!--begin::Input-->
+																<input type="text" name="dicsounted_price" class="form-control mb-2" placeholder="Discounted price" />
+																<!--end::Input-->
+																<!--begin::Description-->
+																<div class="text-muted fs-7">Set the discounted product price. The product will be reduced at the determined fixed price</div>
+																<!--end::Description-->
+															</div>
+															<!--end::Input group-->
+															<!--begin::Tax-->
+
+															<!--end:Tax-->
+														</div>
+														<!--end::Card header-->
+													</div>
+
+													<!--end::Pricing-->
 												</div>
-												<!--end::Modal header-->
-												<!--begin::Modal body-->
-												<div class="modal-body py-10 px-lg-17">
-													<!--begin::Input group-->
-													<div class="fv-row mb-9">
-														<!--begin::Label-->
-														<label class="fs-6 fw-semibold required mb-2">Event Name</label>
-														<!--end::Label-->
-														<!--begin::Input-->
-														<input type="text" class="form-control form-control-solid" placeholder="" name="calendar_event_name" />
-														<!--end::Input-->
-													</div>
-													<!--end::Input group-->
-													<!--begin::Input group-->
-													<div class="fv-row mb-9">
-														<!--begin::Label-->
-														<label class="fs-6 fw-semibold mb-2">Event Description</label>
-														<!--end::Label-->
-														<!--begin::Input-->
-														<input type="text" class="form-control form-control-solid" placeholder="" name="calendar_event_description" />
-														<!--end::Input-->
-													</div>
-													<!--end::Input group-->
-													<!--begin::Input group-->
-													<div class="fv-row mb-9">
-														<!--begin::Label-->
-														<label class="fs-6 fw-semibold mb-2">Event Location</label>
-														<!--end::Label-->
-														<!--begin::Input-->
-														<input type="text" class="form-control form-control-solid" placeholder="" name="calendar_event_location" />
-														<!--end::Input-->
-													</div>
-													<!--end::Input group-->
-													<!--begin::Input group-->
-													<div class="fv-row mb-9">
-														<!--begin::Checkbox-->
-														<label class="form-check form-check-custom form-check-solid">
-															<input class="form-check-input" type="checkbox" value="" id="kt_calendar_datepicker_allday" />
-															<span class="form-check-label fw-semibold" for="kt_calendar_datepicker_allday">All Day</span>
-														</label>
-														<!--end::Checkbox-->
-													</div>
-													<!--end::Input group-->
-													<!--begin::Input group-->
-													<div class="row row-cols-lg-2 g-10">
-														<div class="col">
-															<div class="fv-row mb-9">
-																<!--begin::Label-->
-																<label class="fs-6 fw-semibold mb-2 required">Event Start Date</label>
-																<!--end::Label-->
-																<!--begin::Input-->
-																<input class="form-control form-control-solid" name="calendar_event_start_date" placeholder="Pick a start date" id="kt_calendar_datepicker_start_date" />
-																<!--end::Input-->
-															</div>
-														</div>
-														<div class="col" data-kt-calendar="datepicker">
-															<div class="fv-row mb-9">
-																<!--begin::Label-->
-																<label class="fs-6 fw-semibold mb-2">Event Start Time</label>
-																<!--end::Label-->
-																<!--begin::Input-->
-																<input class="form-control form-control-solid" name="calendar_event_start_time" placeholder="Pick a start time" id="kt_calendar_datepicker_start_time" />
-																<!--end::Input-->
-															</div>
-														</div>
-													</div>
-													<!--end::Input group-->
-													<!--begin::Input group-->
-													<div class="row row-cols-lg-2 g-10">
-														<div class="col">
-															<div class="fv-row mb-9">
-																<!--begin::Label-->
-																<label class="fs-6 fw-semibold mb-2 required">Event End Date</label>
-																<!--end::Label-->
-																<!--begin::Input-->
-																<input class="form-control form-control-solid" name="calendar_event_end_date" placeholder="Pick a end date" id="kt_calendar_datepicker_end_date" />
-																<!--end::Input-->
-															</div>
-														</div>
-														<div class="col" data-kt-calendar="datepicker">
-															<div class="fv-row mb-9">
-																<!--begin::Label-->
-																<label class="fs-6 fw-semibold mb-2">Event End Time</label>
-																<!--end::Label-->
-																<!--begin::Input-->
-																<input class="form-control form-control-solid" name="calendar_event_end_time" placeholder="Pick a end time" id="kt_calendar_datepicker_end_time" />
-																<!--end::Input-->
-															</div>
-														</div>
-													</div>
-													<!--end::Input group-->
+											</div>
+											<!--end::Tab pane-->
+											<!--begin::Tab pane-->
+											<div class="tab-pane fade" id="kt_ecommerce_add_product_advanced" role="tab-panel">
+												<div class="d-flex flex-column gap-7 gap-lg-10">
+
+
+
+
 												</div>
-												<!--end::Modal body-->
-												<!--begin::Modal footer-->
-												<div class="modal-footer flex-center">
-													<!--begin::Button-->
-													<button type="reset" id="kt_modal_add_event_cancel" class="btn btn-light me-3">Cancel</button>
-													<!--end::Button-->
-													<!--begin::Button-->
-													<button type="button" id="kt_modal_add_event_submit" class="btn btn-primary">
-														<span class="indicator-label">Submit</span>
-														<span class="indicator-progress">Please wait...
-														<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-													</button>
-													<!--end::Button-->
-												</div>
-												<!--end::Modal footer-->
-											</form>
-											<!--end::Form-->
+											</div>
+											<!--end::Tab pane-->
+										</div>
+										<!--end::Tab content-->
+										<div class="d-flex justify-content-end">
+											<!--begin::Button-->
+											<a href="../../demo10/dist/apps/ecommerce/catalog/products.html" id="kt_ecommerce_add_product_cancel" class="btn btn-light me-5">Cancel</a>
+											<!--end::Button-->
+											<!--begin::Button-->
+											<button type="submit" id="kt_ecommerce_add_product_submit" class="btn btn-primary">
+												<span class="indicator-label">Save Changes</span>
+												<span class="indicator-progress">Please wait...
+												<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+											</button>
+											<!--end::Button-->
 										</div>
 									</div>
-								</div>
-								<!--end::Modal - New Product-->
-								<!--begin::Modal - New Product-->
-								<div class="modal fade" id="kt_modal_view_event" tabindex="-1" data-bs-focus="false" aria-hidden="true">
-									<!--begin::Modal dialog-->
-									<div class="modal-dialog modal-dialog-centered mw-650px">
-										<!--begin::Modal content-->
-										<div class="modal-content">
-											<!--begin::Modal header-->
-											<div class="modal-header border-0 justify-content-end">
-												<!--begin::Edit-->
-												<div class="btn btn-icon btn-sm btn-color-gray-400 btn-active-icon-primary me-2" data-bs-toggle="tooltip" data-bs-dismiss="click" title="Edit Event" id="kt_modal_view_event_edit">
-													<i class="ki-duotone ki-pencil fs-2">
-														<span class="path1"></span>
-														<span class="path2"></span>
-													</i>
-												</div>
-												<!--end::Edit-->
-												<!--begin::Edit-->
-												<div class="btn btn-icon btn-sm btn-color-gray-400 btn-active-icon-danger me-2" data-bs-toggle="tooltip" data-bs-dismiss="click" title="Delete Event" id="kt_modal_view_event_delete">
-													<i class="ki-duotone ki-trash fs-2">
-														<span class="path1"></span>
-														<span class="path2"></span>
-														<span class="path3"></span>
-														<span class="path4"></span>
-														<span class="path5"></span>
-													</i>
-												</div>
-												<!--end::Edit-->
-												<!--begin::Close-->
-												<div class="btn btn-icon btn-sm btn-color-gray-500 btn-active-icon-primary" data-bs-toggle="tooltip" title="Hide Event" data-bs-dismiss="modal">
-													<i class="ki-duotone ki-cross fs-2x">
-														<span class="path1"></span>
-														<span class="path2"></span>
-													</i>
-												</div>
-												<!--end::Close-->
-											</div>
-											<!--end::Modal header-->
-											<!--begin::Modal body-->
-											<div class="modal-body pt-0 pb-20 px-lg-17">
-												<!--begin::Row-->
-												<div class="d-flex">
-													<!--begin::Icon-->
-													<i class="ki-duotone ki-calendar-8 fs-1 text-muted me-5">
-														<span class="path1"></span>
-														<span class="path2"></span>
-														<span class="path3"></span>
-														<span class="path4"></span>
-														<span class="path5"></span>
-														<span class="path6"></span>
-													</i>
-													<!--end::Icon-->
-													<div class="mb-9">
-														<!--begin::Event name-->
-														<div class="d-flex align-items-center mb-2">
-															<span class="fs-3 fw-bold me-3" data-kt-calendar="event_name"></span>
-															<span class="badge badge-light-success" data-kt-calendar="all_day"></span>
-														</div>
-														<!--end::Event name-->
-														<!--begin::Event description-->
-														<div class="fs-6" data-kt-calendar="event_description"></div>
-														<!--end::Event description-->
-													</div>
-												</div>
-												<!--end::Row-->
-												<!--begin::Row-->
-												<div class="d-flex align-items-center mb-2">
-													<!--begin::Bullet-->
-													<span class="bullet bullet-dot h-10px w-10px bg-success ms-2 me-7"></span>
-													<!--end::Bullet-->
-													<!--begin::Event start date/time-->
-													<div class="fs-6">
-														<span class="fw-bold">Starts</span>
-														<span data-kt-calendar="event_start_date"></span>
-													</div>
-													<!--end::Event start date/time-->
-												</div>
-												<!--end::Row-->
-												<!--begin::Row-->
-												<div class="d-flex align-items-center mb-9">
-													<!--begin::Bullet-->
-													<span class="bullet bullet-dot h-10px w-10px bg-danger ms-2 me-7"></span>
-													<!--end::Bullet-->
-													<!--begin::Event end date/time-->
-													<div class="fs-6">
-														<span class="fw-bold">Ends</span>
-														<span data-kt-calendar="event_end_date"></span>
-													</div>
-													<!--end::Event end date/time-->
-												</div>
-												<!--end::Row-->
-												<!--begin::Row-->
-												<div class="d-flex align-items-center">
-													<!--begin::Icon-->
-													<i class="ki-duotone ki-geolocation fs-1 text-muted me-5">
-														<span class="path1"></span>
-														<span class="path2"></span>
-													</i>
-													<!--end::Icon-->
-													<!--begin::Event location-->
-													<div class="fs-6" data-kt-calendar="event_location"></div>
-													<!--end::Event location-->
-												</div>
-												<!--end::Row-->
-											</div>
-											<!--end::Modal body-->
-										</div>
-									</div>
-								</div>
-								<!--end::Modal - New Product-->
-								<!--end::Modals-->
-                        </div>
+									<!--end::Main column-->
+								</form>
+								<!--end::Form-->
+							</div>
 							<!--end::Container-->
 						</div>
-                        <div class="post d-flex flex-column-fluid" id="kt_post">
-
-<!--begin::Container-->
-<div id="kt_content_container" class="container-xxl">
-
-@include('layouts.active')
-
-    <div class="card">
-    @include('layouts.testcasebox')
-    </div>
-</div>
-
-    @include('layouts.projectstate')
-
-    <!--begin::Modals-->
-    <!--begin::Modal - New Product-->
-    <div class="modal fade" id="kt_modal_add_event" tabindex-="1" aria-hidden="true" data-bs-focus="false">
-        <!--begin::Modal dialog-->
-        <div class="modal-dialog modal-dialog-centered mw-650px">
-            <!--begin::Modal content-->
-            <div class="modal-content">
-                <!--begin::Form-->
-                <form class="form" action="#" id="kt_modal_add_event_form">
-                    <!--begin::Modal header-->
-                    <div class="modal-header">
-                        <!--begin::Modal title-->
-                        <h2 class="fw-bold" data-kt-calendar="title">Add Event</h2>
-                        <!--end::Modal title-->
-                        <!--begin::Close-->
-                        <div class="btn btn-icon btn-sm btn-active-icon-primary" id="kt_modal_add_event_close">
-                            <i class="ki-duotone ki-cross fs-1">
-                                <span class="path1"></span>
-                                <span class="path2"></span>
-                            </i>
-                        </div>
-                        <!--end::Close-->
-                    </div>
-                    <!--end::Modal header-->
-                    <!--begin::Modal body-->
-                    <div class="modal-body py-10 px-lg-17">
-                        <!--begin::Input group-->
-                        <div class="fv-row mb-9">
-                            <!--begin::Label-->
-                            <label class="fs-6 fw-semibold required mb-2">Event Name</label>
-                            <!--end::Label-->
-                            <!--begin::Input-->
-                            <input type="text" class="form-control form-control-solid" placeholder="" name="calendar_event_name" />
-                            <!--end::Input-->
-                        </div>
-                        <!--end::Input group-->
-                        <!--begin::Input group-->
-                        <div class="fv-row mb-9">
-                            <!--begin::Label-->
-                            <label class="fs-6 fw-semibold mb-2">Event Description</label>
-                            <!--end::Label-->
-                            <!--begin::Input-->
-                            <input type="text" class="form-control form-control-solid" placeholder="" name="calendar_event_description" />
-                            <!--end::Input-->
-                        </div>
-                        <!--end::Input group-->
-                        <!--begin::Input group-->
-                        <div class="fv-row mb-9">
-                            <!--begin::Label-->
-                            <label class="fs-6 fw-semibold mb-2">Event Location</label>
-                            <!--end::Label-->
-                            <!--begin::Input-->
-                            <input type="text" class="form-control form-control-solid" placeholder="" name="calendar_event_location" />
-                            <!--end::Input-->
-                        </div>
-                        <!--end::Input group-->
-                        <!--begin::Input group-->
-                        <div class="fv-row mb-9">
-                            <!--begin::Checkbox-->
-                            <label class="form-check form-check-custom form-check-solid">
-                                <input class="form-check-input" type="checkbox" value="" id="kt_calendar_datepicker_allday" />
-                                <span class="form-check-label fw-semibold" for="kt_calendar_datepicker_allday">All Day</span>
-                            </label>
-                            <!--end::Checkbox-->
-                        </div>
-                        <!--end::Input group-->
-                        <!--begin::Input group-->
-                        <div class="row row-cols-lg-2 g-10">
-                            <div class="col">
-                                <div class="fv-row mb-9">
-                                    <!--begin::Label-->
-                                    <label class="fs-6 fw-semibold mb-2 required">Event Start Date</label>
-                                    <!--end::Label-->
-                                    <!--begin::Input-->
-                                    <input class="form-control form-control-solid" name="calendar_event_start_date" placeholder="Pick a start date" id="kt_calendar_datepicker_start_date" />
-                                    <!--end::Input-->
-                                </div>
-                            </div>
-                            <div class="col" data-kt-calendar="datepicker">
-                                <div class="fv-row mb-9">
-                                    <!--begin::Label-->
-                                    <label class="fs-6 fw-semibold mb-2">Event Start Time</label>
-                                    <!--end::Label-->
-                                    <!--begin::Input-->
-                                    <input class="form-control form-control-solid" name="calendar_event_start_time" placeholder="Pick a start time" id="kt_calendar_datepicker_start_time" />
-                                    <!--end::Input-->
-                                </div>
-                            </div>
-                        </div>
-                        <!--end::Input group-->
-                        <!--begin::Input group-->
-                        <div class="row row-cols-lg-2 g-10">
-                            <div class="col">
-                                <div class="fv-row mb-9">
-                                    <!--begin::Label-->
-                                    <label class="fs-6 fw-semibold mb-2 required">Event End Date</label>
-                                    <!--end::Label-->
-                                    <!--begin::Input-->
-                                    <input class="form-control form-control-solid" name="calendar_event_end_date" placeholder="Pick a end date" id="kt_calendar_datepicker_end_date" />
-                                    <!--end::Input-->
-                                </div>
-                            </div>
-                            <div class="col" data-kt-calendar="datepicker">
-                                <div class="fv-row mb-9">
-                                    <!--begin::Label-->
-                                    <label class="fs-6 fw-semibold mb-2">Event End Time</label>
-                                    <!--end::Label-->
-                                    <!--begin::Input-->
-                                    <input class="form-control form-control-solid" name="calendar_event_end_time" placeholder="Pick a end time" id="kt_calendar_datepicker_end_time" />
-                                    <!--end::Input-->
-                                </div>
-                            </div>
-                        </div>
-                        <!--end::Input group-->
-                    </div>
-                    <!--end::Modal body-->
-                    <!--begin::Modal footer-->
-                    <div class="modal-footer flex-center">
-                        <!--begin::Button-->
-                        <button type="reset" id="kt_modal_add_event_cancel" class="btn btn-light me-3">Cancel</button>
-                        <!--end::Button-->
-                        <!--begin::Button-->
-                        <button type="button" id="kt_modal_add_event_submit" class="btn btn-primary">
-                            <span class="indicator-label">Submit</span>
-                            <span class="indicator-progress">Please wait...
-                            <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-                        </button>
-                        <!--end::Button-->
-                    </div>
-                    <!--end::Modal footer-->
-                </form>
-                <!--end::Form-->
-            </div>
-        </div>
-    </div>
-    <!--end::Modal - New Product-->
-    <!--begin::Modal - New Product-->
-    <div class="modal fade" id="kt_modal_view_event" tabindex="-1" data-bs-focus="false" aria-hidden="true">
-        <!--begin::Modal dialog-->
-        <div class="modal-dialog modal-dialog-centered mw-650px">
-            <!--begin::Modal content-->
-            <div class="modal-content">
-                <!--begin::Modal header-->
-                <div class="modal-header border-0 justify-content-end">
-                    <!--begin::Edit-->
-                    <div class="btn btn-icon btn-sm btn-color-gray-400 btn-active-icon-primary me-2" data-bs-toggle="tooltip" data-bs-dismiss="click" title="Edit Event" id="kt_modal_view_event_edit">
-                        <i class="ki-duotone ki-pencil fs-2">
-                            <span class="path1"></span>
-                            <span class="path2"></span>
-                        </i>
-                    </div>
-                    <!--end::Edit-->
-                    <!--begin::Edit-->
-                    <div class="btn btn-icon btn-sm btn-color-gray-400 btn-active-icon-danger me-2" data-bs-toggle="tooltip" data-bs-dismiss="click" title="Delete Event" id="kt_modal_view_event_delete">
-                        <i class="ki-duotone ki-trash fs-2">
-                            <span class="path1"></span>
-                            <span class="path2"></span>
-                            <span class="path3"></span>
-                            <span class="path4"></span>
-                            <span class="path5"></span>
-                        </i>
-                    </div>
-                    <!--end::Edit-->
-                    <!--begin::Close-->
-                    <div class="btn btn-icon btn-sm btn-color-gray-500 btn-active-icon-primary" data-bs-toggle="tooltip" title="Hide Event" data-bs-dismiss="modal">
-                        <i class="ki-duotone ki-cross fs-2x">
-                            <span class="path1"></span>
-                            <span class="path2"></span>
-                        </i>
-                    </div>
-                    <!--end::Close-->
-                </div>
-                <!--end::Modal header-->
-                <!--begin::Modal body-->
-                <div class="modal-body pt-0 pb-20 px-lg-17">
-                    <!--begin::Row-->
-                    <div class="d-flex">
-                        <!--begin::Icon-->
-                        <i class="ki-duotone ki-calendar-8 fs-1 text-muted me-5">
-                            <span class="path1"></span>
-                            <span class="path2"></span>
-                            <span class="path3"></span>
-                            <span class="path4"></span>
-                            <span class="path5"></span>
-                            <span class="path6"></span>
-                        </i>
-                        <!--end::Icon-->
-                        <div class="mb-9">
-                            <!--begin::Event name-->
-                            <div class="d-flex align-items-center mb-2">
-                                <span class="fs-3 fw-bold me-3" data-kt-calendar="event_name"></span>
-                                <span class="badge badge-light-success" data-kt-calendar="all_day"></span>
-                            </div>
-                            <!--end::Event name-->
-                            <!--begin::Event description-->
-                            <div class="fs-6" data-kt-calendar="event_description"></div>
-                            <!--end::Event description-->
-                        </div>
-                    </div>
-                    <!--end::Row-->
-                    <!--begin::Row-->
-                    <div class="d-flex align-items-center mb-2">
-                        <!--begin::Bullet-->
-                        <span class="bullet bullet-dot h-10px w-10px bg-success ms-2 me-7"></span>
-                        <!--end::Bullet-->
-                        <!--begin::Event start date/time-->
-                        <div class="fs-6">
-                            <span class="fw-bold">Starts</span>
-                            <span data-kt-calendar="event_start_date"></span>
-                        </div>
-                        <!--end::Event start date/time-->
-                    </div>
-                    <!--end::Row-->
-                    <!--begin::Row-->
-                    <div class="d-flex align-items-center mb-9">
-                        <!--begin::Bullet-->
-                        <span class="bullet bullet-dot h-10px w-10px bg-danger ms-2 me-7"></span>
-                        <!--end::Bullet-->
-                        <!--begin::Event end date/time-->
-                        <div class="fs-6">
-                            <span class="fw-bold">Ends</span>
-                            <span data-kt-calendar="event_end_date"></span>
-                        </div>
-                        <!--end::Event end date/time-->
-                    </div>
-                    <!--end::Row-->
-                    <!--begin::Row-->
-                    <div class="d-flex align-items-center">
-                        <!--begin::Icon-->
-                        <i class="ki-duotone ki-geolocation fs-1 text-muted me-5">
-                            <span class="path1"></span>
-                            <span class="path2"></span>
-                        </i>
-                        <!--end::Icon-->
-                        <!--begin::Event location-->
-                        <div class="fs-6" data-kt-calendar="event_location"></div>
-                        <!--end::Event location-->
-                    </div>
-                    <!--end::Row-->
-                </div>
-                <!--end::Modal body-->
-            </div>
-        </div>
-    </div>
-    <!--end::Modal - New Product-->
-    <!--end::Modals-->
-</div>
-<!--end::Container-->
-
-
 						<!--end::Post-->
 					</div>
 					<!--end::Content-->
@@ -4095,7 +3774,7 @@ License: For each use you must have a valid license purchased only from above li
 											</label>
 											<!--end::Label-->
 											<!--begin::Image input placeholder-->
-											<style>.image-input-placeholder { background-image: url('assets/media/svg/files/blank-image.svg'); } [data-bs-theme="dark"] .image-input-placeholder { background-image: url('assets/media/svg/files/blank-image-dark.svg'); }</style>
+											<style>.image-input-placeholder { background-image: url('/templates/t1/assets/media/svg/files/blank-image.svg'); } [data-bs-theme="dark"] .image-input-placeholder { background-image: url('/templates/t1/assets/media/svg/files/blank-image-dark.svg'); }</style>
 											<!--end::Image input placeholder-->
 											<!--begin::Image input-->
 											<div class="image-input image-input-empty image-input-outline image-input-placeholder" data-kt-image-input="true">
@@ -4575,7 +4254,7 @@ License: For each use you must have a valid license purchased only from above li
 											</span></label>
 											<!--End::Label-->
 											<!--begin::Tagify-->
-											<input class="form-control d-flex align-items-center" value="" id="kt_modal_create_campaign_location" data-kt-flags-path="assets/media/flags/" />
+											<input class="form-control d-flex align-items-center" value="" id="kt_modal_create_campaign_location" data-kt-flags-path="/templates/t1/assets/media/flags/" />
 											<!--end::Tagify-->
 										</div>
 										<!--end::Input group-->
@@ -5475,560 +5154,6 @@ License: For each use you must have a valid license purchased only from above li
 			<!--end::Modal dialog-->
 		</div>
 		<!--end::Modal - Create App-->
-		<!--begin::Modal - Invite Friends-->
-		<div class="modal fade" id="kt_modal_invite_friends" tabindex="-1" aria-hidden="true">
-			<!--begin::Modal dialog-->
-			<div class="modal-dialog mw-650px">
-				<!--begin::Modal content-->
-				<div class="modal-content">
-					<!--begin::Modal header-->
-					<div class="modal-header pb-0 border-0 justify-content-end">
-						<!--begin::Close-->
-						<div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
-							<i class="ki-duotone ki-cross fs-1">
-								<span class="path1"></span>
-								<span class="path2"></span>
-							</i>
-						</div>
-						<!--end::Close-->
-					</div>
-					<!--begin::Modal header-->
-					<!--begin::Modal body-->
-					<div class="modal-body scroll-y mx-5 mx-xl-18 pt-0 pb-15">
-						<!--begin::Heading-->
-						<div class="text-center mb-13">
-							<!--begin::Title-->
-							<h1 class="mb-3">Invite a Friend</h1>
-							<!--end::Title-->
-							<!--begin::Description-->
-							<div class="text-muted fw-semibold fs-5">If you need more info, please check out
-							<a href="#" class="link-primary fw-bold">FAQ Page</a>.</div>
-							<!--end::Description-->
-						</div>
-						<!--end::Heading-->
-						<!--begin::Google Contacts Invite-->
-						<div class="btn btn-light-primary fw-bold w-100 mb-8">
-						<img alt="Logo" src="/templates/t1/assets/media/svg/brand-logos/google-icon.svg" class="h-20px me-3" />Invite Gmail Contacts</div>
-						<!--end::Google Contacts Invite-->
-						<!--begin::Separator-->
-						<div class="separator d-flex flex-center mb-8">
-							<span class="text-uppercase bg-body fs-7 fw-semibold text-muted px-3">or</span>
-						</div>
-						<!--end::Separator-->
-						<!--begin::Textarea-->
-						<textarea class="form-control form-control-solid mb-8" rows="3" placeholder="Type or paste emails here"></textarea>
-						<!--end::Textarea-->
-						<!--begin::Users-->
-						<div class="mb-10">
-							<!--begin::Heading-->
-							<div class="fs-6 fw-semibold mb-2">Your Invitations</div>
-							<!--end::Heading-->
-							<!--begin::List-->
-							<div class="mh-300px scroll-y me-n7 pe-7">
-								<!--begin::User-->
-								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-									<!--begin::Details-->
-									<div class="d-flex align-items-center">
-										<!--begin::Avatar-->
-										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="/templates/t1/assets/media/avatars/300-6.jpg" />
-										</div>
-										<!--end::Avatar-->
-										<!--begin::Details-->
-										<div class="ms-5">
-											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Emma Smith</a>
-											<div class="fw-semibold text-muted">smith@kpmg.com</div>
-										</div>
-										<!--end::Details-->
-									</div>
-									<!--end::Details-->
-									<!--begin::Access menu-->
-									<div class="ms-2 w-100px">
-										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
-											<option value="1">Guest</option>
-											<option value="2" selected="selected">Owner</option>
-											<option value="3">Can Edit</option>
-										</select>
-									</div>
-									<!--end::Access menu-->
-								</div>
-								<!--end::User-->
-								<!--begin::User-->
-								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-									<!--begin::Details-->
-									<div class="d-flex align-items-center">
-										<!--begin::Avatar-->
-										<div class="symbol symbol-35px symbol-circle">
-											<span class="symbol-label bg-light-danger text-danger fw-semibold">M</span>
-										</div>
-										<!--end::Avatar-->
-										<!--begin::Details-->
-										<div class="ms-5">
-											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Melody Macy</a>
-											<div class="fw-semibold text-muted">melody@altbox.com</div>
-										</div>
-										<!--end::Details-->
-									</div>
-									<!--end::Details-->
-									<!--begin::Access menu-->
-									<div class="ms-2 w-100px">
-										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
-											<option value="1" selected="selected">Guest</option>
-											<option value="2">Owner</option>
-											<option value="3">Can Edit</option>
-										</select>
-									</div>
-									<!--end::Access menu-->
-								</div>
-								<!--end::User-->
-								<!--begin::User-->
-								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-									<!--begin::Details-->
-									<div class="d-flex align-items-center">
-										<!--begin::Avatar-->
-										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="/templates/t1/assets/media/avatars/300-1.jpg" />
-										</div>
-										<!--end::Avatar-->
-										<!--begin::Details-->
-										<div class="ms-5">
-											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Max Smith</a>
-											<div class="fw-semibold text-muted">max@kt.com</div>
-										</div>
-										<!--end::Details-->
-									</div>
-									<!--end::Details-->
-									<!--begin::Access menu-->
-									<div class="ms-2 w-100px">
-										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
-											<option value="1">Guest</option>
-											<option value="2">Owner</option>
-											<option value="3" selected="selected">Can Edit</option>
-										</select>
-									</div>
-									<!--end::Access menu-->
-								</div>
-								<!--end::User-->
-								<!--begin::User-->
-								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-									<!--begin::Details-->
-									<div class="d-flex align-items-center">
-										<!--begin::Avatar-->
-										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="/templates/t1/assets/media/avatars/300-5.jpg" />
-										</div>
-										<!--end::Avatar-->
-										<!--begin::Details-->
-										<div class="ms-5">
-											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Sean Bean</a>
-											<div class="fw-semibold text-muted">sean@dellito.com</div>
-										</div>
-										<!--end::Details-->
-									</div>
-									<!--end::Details-->
-									<!--begin::Access menu-->
-									<div class="ms-2 w-100px">
-										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
-											<option value="1">Guest</option>
-											<option value="2" selected="selected">Owner</option>
-											<option value="3">Can Edit</option>
-										</select>
-									</div>
-									<!--end::Access menu-->
-								</div>
-								<!--end::User-->
-								<!--begin::User-->
-								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-									<!--begin::Details-->
-									<div class="d-flex align-items-center">
-										<!--begin::Avatar-->
-										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="/templates/t1/assets/media/avatars/300-25.jpg" />
-										</div>
-										<!--end::Avatar-->
-										<!--begin::Details-->
-										<div class="ms-5">
-											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Brian Cox</a>
-											<div class="fw-semibold text-muted">brian@exchange.com</div>
-										</div>
-										<!--end::Details-->
-									</div>
-									<!--end::Details-->
-									<!--begin::Access menu-->
-									<div class="ms-2 w-100px">
-										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
-											<option value="1">Guest</option>
-											<option value="2">Owner</option>
-											<option value="3" selected="selected">Can Edit</option>
-										</select>
-									</div>
-									<!--end::Access menu-->
-								</div>
-								<!--end::User-->
-								<!--begin::User-->
-								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-									<!--begin::Details-->
-									<div class="d-flex align-items-center">
-										<!--begin::Avatar-->
-										<div class="symbol symbol-35px symbol-circle">
-											<span class="symbol-label bg-light-warning text-warning fw-semibold">C</span>
-										</div>
-										<!--end::Avatar-->
-										<!--begin::Details-->
-										<div class="ms-5">
-											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Mikaela Collins</a>
-											<div class="fw-semibold text-muted">mik@pex.com</div>
-										</div>
-										<!--end::Details-->
-									</div>
-									<!--end::Details-->
-									<!--begin::Access menu-->
-									<div class="ms-2 w-100px">
-										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
-											<option value="1">Guest</option>
-											<option value="2" selected="selected">Owner</option>
-											<option value="3">Can Edit</option>
-										</select>
-									</div>
-									<!--end::Access menu-->
-								</div>
-								<!--end::User-->
-								<!--begin::User-->
-								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-									<!--begin::Details-->
-									<div class="d-flex align-items-center">
-										<!--begin::Avatar-->
-										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="/templates/t1/assets/media/avatars/300-9.jpg" />
-										</div>
-										<!--end::Avatar-->
-										<!--begin::Details-->
-										<div class="ms-5">
-											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Francis Mitcham</a>
-											<div class="fw-semibold text-muted">f.mit@kpmg.com</div>
-										</div>
-										<!--end::Details-->
-									</div>
-									<!--end::Details-->
-									<!--begin::Access menu-->
-									<div class="ms-2 w-100px">
-										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
-											<option value="1">Guest</option>
-											<option value="2">Owner</option>
-											<option value="3" selected="selected">Can Edit</option>
-										</select>
-									</div>
-									<!--end::Access menu-->
-								</div>
-								<!--end::User-->
-								<!--begin::User-->
-								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-									<!--begin::Details-->
-									<div class="d-flex align-items-center">
-										<!--begin::Avatar-->
-										<div class="symbol symbol-35px symbol-circle">
-											<span class="symbol-label bg-light-danger text-danger fw-semibold">O</span>
-										</div>
-										<!--end::Avatar-->
-										<!--begin::Details-->
-										<div class="ms-5">
-											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Olivia Wild</a>
-											<div class="fw-semibold text-muted">olivia@corpmail.com</div>
-										</div>
-										<!--end::Details-->
-									</div>
-									<!--end::Details-->
-									<!--begin::Access menu-->
-									<div class="ms-2 w-100px">
-										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
-											<option value="1">Guest</option>
-											<option value="2" selected="selected">Owner</option>
-											<option value="3">Can Edit</option>
-										</select>
-									</div>
-									<!--end::Access menu-->
-								</div>
-								<!--end::User-->
-								<!--begin::User-->
-								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-									<!--begin::Details-->
-									<div class="d-flex align-items-center">
-										<!--begin::Avatar-->
-										<div class="symbol symbol-35px symbol-circle">
-											<span class="symbol-label bg-light-primary text-primary fw-semibold">N</span>
-										</div>
-										<!--end::Avatar-->
-										<!--begin::Details-->
-										<div class="ms-5">
-											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Neil Owen</a>
-											<div class="fw-semibold text-muted">owen.neil@gmail.com</div>
-										</div>
-										<!--end::Details-->
-									</div>
-									<!--end::Details-->
-									<!--begin::Access menu-->
-									<div class="ms-2 w-100px">
-										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
-											<option value="1" selected="selected">Guest</option>
-											<option value="2">Owner</option>
-											<option value="3">Can Edit</option>
-										</select>
-									</div>
-									<!--end::Access menu-->
-								</div>
-								<!--end::User-->
-								<!--begin::User-->
-								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-									<!--begin::Details-->
-									<div class="d-flex align-items-center">
-										<!--begin::Avatar-->
-										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="/templates/t1/assets/media/avatars/300-23.jpg" />
-										</div>
-										<!--end::Avatar-->
-										<!--begin::Details-->
-										<div class="ms-5">
-											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Dan Wilson</a>
-											<div class="fw-semibold text-muted">dam@consilting.com</div>
-										</div>
-										<!--end::Details-->
-									</div>
-									<!--end::Details-->
-									<!--begin::Access menu-->
-									<div class="ms-2 w-100px">
-										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
-											<option value="1">Guest</option>
-											<option value="2">Owner</option>
-											<option value="3" selected="selected">Can Edit</option>
-										</select>
-									</div>
-									<!--end::Access menu-->
-								</div>
-								<!--end::User-->
-								<!--begin::User-->
-								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-									<!--begin::Details-->
-									<div class="d-flex align-items-center">
-										<!--begin::Avatar-->
-										<div class="symbol symbol-35px symbol-circle">
-											<span class="symbol-label bg-light-danger text-danger fw-semibold">E</span>
-										</div>
-										<!--end::Avatar-->
-										<!--begin::Details-->
-										<div class="ms-5">
-											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Emma Bold</a>
-											<div class="fw-semibold text-muted">emma@intenso.com</div>
-										</div>
-										<!--end::Details-->
-									</div>
-									<!--end::Details-->
-									<!--begin::Access menu-->
-									<div class="ms-2 w-100px">
-										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
-											<option value="1">Guest</option>
-											<option value="2" selected="selected">Owner</option>
-											<option value="3">Can Edit</option>
-										</select>
-									</div>
-									<!--end::Access menu-->
-								</div>
-								<!--end::User-->
-								<!--begin::User-->
-								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-									<!--begin::Details-->
-									<div class="d-flex align-items-center">
-										<!--begin::Avatar-->
-										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="/templates/t1/assets/media/avatars/300-12.jpg" />
-										</div>
-										<!--end::Avatar-->
-										<!--begin::Details-->
-										<div class="ms-5">
-											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Ana Crown</a>
-											<div class="fw-semibold text-muted">ana.cf@limtel.com</div>
-										</div>
-										<!--end::Details-->
-									</div>
-									<!--end::Details-->
-									<!--begin::Access menu-->
-									<div class="ms-2 w-100px">
-										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
-											<option value="1" selected="selected">Guest</option>
-											<option value="2">Owner</option>
-											<option value="3">Can Edit</option>
-										</select>
-									</div>
-									<!--end::Access menu-->
-								</div>
-								<!--end::User-->
-								<!--begin::User-->
-								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-									<!--begin::Details-->
-									<div class="d-flex align-items-center">
-										<!--begin::Avatar-->
-										<div class="symbol symbol-35px symbol-circle">
-											<span class="symbol-label bg-light-info text-info fw-semibold">A</span>
-										</div>
-										<!--end::Avatar-->
-										<!--begin::Details-->
-										<div class="ms-5">
-											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Robert Doe</a>
-											<div class="fw-semibold text-muted">robert@benko.com</div>
-										</div>
-										<!--end::Details-->
-									</div>
-									<!--end::Details-->
-									<!--begin::Access menu-->
-									<div class="ms-2 w-100px">
-										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
-											<option value="1">Guest</option>
-											<option value="2">Owner</option>
-											<option value="3" selected="selected">Can Edit</option>
-										</select>
-									</div>
-									<!--end::Access menu-->
-								</div>
-								<!--end::User-->
-								<!--begin::User-->
-								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-									<!--begin::Details-->
-									<div class="d-flex align-items-center">
-										<!--begin::Avatar-->
-										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="/templates/t1/assets/media/avatars/300-13.jpg" />
-										</div>
-										<!--end::Avatar-->
-										<!--begin::Details-->
-										<div class="ms-5">
-											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">John Miller</a>
-											<div class="fw-semibold text-muted">miller@mapple.com</div>
-										</div>
-										<!--end::Details-->
-									</div>
-									<!--end::Details-->
-									<!--begin::Access menu-->
-									<div class="ms-2 w-100px">
-										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
-											<option value="1">Guest</option>
-											<option value="2">Owner</option>
-											<option value="3" selected="selected">Can Edit</option>
-										</select>
-									</div>
-									<!--end::Access menu-->
-								</div>
-								<!--end::User-->
-								<!--begin::User-->
-								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-									<!--begin::Details-->
-									<div class="d-flex align-items-center">
-										<!--begin::Avatar-->
-										<div class="symbol symbol-35px symbol-circle">
-											<span class="symbol-label bg-light-success text-success fw-semibold">L</span>
-										</div>
-										<!--end::Avatar-->
-										<!--begin::Details-->
-										<div class="ms-5">
-											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Lucy Kunic</a>
-											<div class="fw-semibold text-muted">lucy.m@fentech.com</div>
-										</div>
-										<!--end::Details-->
-									</div>
-									<!--end::Details-->
-									<!--begin::Access menu-->
-									<div class="ms-2 w-100px">
-										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
-											<option value="1">Guest</option>
-											<option value="2" selected="selected">Owner</option>
-											<option value="3">Can Edit</option>
-										</select>
-									</div>
-									<!--end::Access menu-->
-								</div>
-								<!--end::User-->
-								<!--begin::User-->
-								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
-									<!--begin::Details-->
-									<div class="d-flex align-items-center">
-										<!--begin::Avatar-->
-										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="/templates/t1/assets/media/avatars/300-21.jpg" />
-										</div>
-										<!--end::Avatar-->
-										<!--begin::Details-->
-										<div class="ms-5">
-											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Ethan Wilder</a>
-											<div class="fw-semibold text-muted">ethan@loop.com.au</div>
-										</div>
-										<!--end::Details-->
-									</div>
-									<!--end::Details-->
-									<!--begin::Access menu-->
-									<div class="ms-2 w-100px">
-										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
-											<option value="1" selected="selected">Guest</option>
-											<option value="2">Owner</option>
-											<option value="3">Can Edit</option>
-										</select>
-									</div>
-									<!--end::Access menu-->
-								</div>
-								<!--end::User-->
-								<!--begin::User-->
-								<div class="d-flex flex-stack py-4">
-									<!--begin::Details-->
-									<div class="d-flex align-items-center">
-										<!--begin::Avatar-->
-										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="/templates/t1/assets/media/avatars/300-9.jpg" />
-										</div>
-										<!--end::Avatar-->
-										<!--begin::Details-->
-										<div class="ms-5">
-											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Francis Mitcham</a>
-											<div class="fw-semibold text-muted">f.mit@kpmg.com</div>
-										</div>
-										<!--end::Details-->
-									</div>
-									<!--end::Details-->
-									<!--begin::Access menu-->
-									<div class="ms-2 w-100px">
-										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
-											<option value="1">Guest</option>
-											<option value="2">Owner</option>
-											<option value="3" selected="selected">Can Edit</option>
-										</select>
-									</div>
-									<!--end::Access menu-->
-								</div>
-								<!--end::User-->
-							</div>
-							<!--end::List-->
-						</div>
-						<!--end::Users-->
-						<!--begin::Notice-->
-						<div class="d-flex flex-stack">
-							<!--begin::Label-->
-							<div class="me-5 fw-semibold">
-								<label class="fs-6">Adding Users by Team Members</label>
-								<div class="fs-7 text-muted">If you need more info, please check budget planning</div>
-							</div>
-							<!--end::Label-->
-							<!--begin::Switch-->
-							<label class="form-check form-switch form-check-custom form-check-solid">
-								<input class="form-check-input" type="checkbox" value="1" checked="checked" />
-								<span class="form-check-label fw-semibold text-muted">Allowed</span>
-							</label>
-							<!--end::Switch-->
-						</div>
-						<!--end::Notice-->
-					</div>
-					<!--end::Modal body-->
-				</div>
-				<!--end::Modal content-->
-			</div>
-			<!--end::Modal dialog-->
-		</div>
-		<!--end::Modal - Invite Friend-->
 		<!--begin::Modal - Users Search-->
 		<div class="modal fade" id="kt_modal_users_search" tabindex="-1" aria-hidden="true">
 			<!--begin::Modal dialog-->
@@ -6765,13 +5890,13 @@ License: For each use you must have a valid license purchased only from above li
 												<!--end::Checkbox-->
 												<!--begin::Avatar-->
 												<div class="symbol symbol-35px symbol-circle">
-													<span class="symbol-label bg-light-primary text-primary fw-semibold">N</span>
+													<img alt="Pic" src="/templates/t1/assets/media/avatars/300-23.jpg" />
 												</div>
 												<!--end::Avatar-->
 												<!--begin::Details-->
 												<div class="ms-5">
-													<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Neil Owen</a>
-													<div class="fw-semibold text-muted">owen.neil@gmail.com</div>
+													<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Dan Wilson</a>
+													<div class="fw-semibold text-muted">dam@consilting.com</div>
 												</div>
 												<!--end::Details-->
 											</div>
@@ -6824,18 +5949,573 @@ License: For each use you must have a valid license purchased only from above li
 			<!--end::Modal dialog-->
 		</div>
 		<!--end::Modal - Users Search-->
+		<!--begin::Modal - Invite Friends-->
+		<div class="modal fade" id="kt_modal_invite_friends" tabindex="-1" aria-hidden="true">
+			<!--begin::Modal dialog-->
+			<div class="modal-dialog mw-650px">
+				<!--begin::Modal content-->
+				<div class="modal-content">
+					<!--begin::Modal header-->
+					<div class="modal-header pb-0 border-0 justify-content-end">
+						<!--begin::Close-->
+						<div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+							<i class="ki-duotone ki-cross fs-1">
+								<span class="path1"></span>
+								<span class="path2"></span>
+							</i>
+						</div>
+						<!--end::Close-->
+					</div>
+					<!--begin::Modal header-->
+					<!--begin::Modal body-->
+					<div class="modal-body scroll-y mx-5 mx-xl-18 pt-0 pb-15">
+						<!--begin::Heading-->
+						<div class="text-center mb-13">
+							<!--begin::Title-->
+							<h1 class="mb-3">Invite a Friend</h1>
+							<!--end::Title-->
+							<!--begin::Description-->
+							<div class="text-muted fw-semibold fs-5">If you need more info, please check out
+							<a href="#" class="link-primary fw-bold">FAQ Page</a>.</div>
+							<!--end::Description-->
+						</div>
+						<!--end::Heading-->
+						<!--begin::Google Contacts Invite-->
+						<div class="btn btn-light-primary fw-bold w-100 mb-8">
+						<img alt="Logo" src="/templates/t1/assets/media/svg/brand-logos/google-icon.svg" class="h-20px me-3" />Invite Gmail Contacts</div>
+						<!--end::Google Contacts Invite-->
+						<!--begin::Separator-->
+						<div class="separator d-flex flex-center mb-8">
+							<span class="text-uppercase bg-body fs-7 fw-semibold text-muted px-3">or</span>
+						</div>
+						<!--end::Separator-->
+						<!--begin::Textarea-->
+						<textarea class="form-control form-control-solid mb-8" rows="3" placeholder="Type or paste emails here"></textarea>
+						<!--end::Textarea-->
+						<!--begin::Users-->
+						<div class="mb-10">
+							<!--begin::Heading-->
+							<div class="fs-6 fw-semibold mb-2">Your Invitations</div>
+							<!--end::Heading-->
+							<!--begin::List-->
+							<div class="mh-300px scroll-y me-n7 pe-7">
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<img alt="Pic" src="/templates/t1/assets/media/avatars/300-6.jpg" />
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Emma Smith</a>
+											<div class="fw-semibold text-muted">smith@kpmg.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1">Guest</option>
+											<option value="2" selected="selected">Owner</option>
+											<option value="3">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<span class="symbol-label bg-light-danger text-danger fw-semibold">M</span>
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Melody Macy</a>
+											<div class="fw-semibold text-muted">melody@altbox.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1" selected="selected">Guest</option>
+											<option value="2">Owner</option>
+											<option value="3">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<img alt="Pic" src="/templates/t1/assets/media/avatars/300-1.jpg" />
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Max Smith</a>
+											<div class="fw-semibold text-muted">max@kt.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1">Guest</option>
+											<option value="2">Owner</option>
+											<option value="3" selected="selected">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<img alt="Pic" src="/templates/t1/assets/media/avatars/300-5.jpg" />
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Sean Bean</a>
+											<div class="fw-semibold text-muted">sean@dellito.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1">Guest</option>
+											<option value="2" selected="selected">Owner</option>
+											<option value="3">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<img alt="Pic" src="/templates/t1/assets/media/avatars/300-25.jpg" />
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Brian Cox</a>
+											<div class="fw-semibold text-muted">brian@exchange.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1">Guest</option>
+											<option value="2">Owner</option>
+											<option value="3" selected="selected">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<span class="symbol-label bg-light-warning text-warning fw-semibold">C</span>
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Mikaela Collins</a>
+											<div class="fw-semibold text-muted">mik@pex.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1">Guest</option>
+											<option value="2" selected="selected">Owner</option>
+											<option value="3">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<img alt="Pic" src="/templates/t1/assets/media/avatars/300-9.jpg" />
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Francis Mitcham</a>
+											<div class="fw-semibold text-muted">f.mit@kpmg.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1">Guest</option>
+											<option value="2">Owner</option>
+											<option value="3" selected="selected">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<span class="symbol-label bg-light-danger text-danger fw-semibold">O</span>
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Olivia Wild</a>
+											<div class="fw-semibold text-muted">olivia@corpmail.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1">Guest</option>
+											<option value="2" selected="selected">Owner</option>
+											<option value="3">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<span class="symbol-label bg-light-primary text-primary fw-semibold">N</span>
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Neil Owen</a>
+											<div class="fw-semibold text-muted">owen.neil@gmail.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1" selected="selected">Guest</option>
+											<option value="2">Owner</option>
+											<option value="3">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<img alt="Pic" src="/templates/t1/assets/media/avatars/300-23.jpg" />
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Dan Wilson</a>
+											<div class="fw-semibold text-muted">dam@consilting.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1">Guest</option>
+											<option value="2">Owner</option>
+											<option value="3" selected="selected">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<span class="symbol-label bg-light-danger text-danger fw-semibold">E</span>
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Emma Bold</a>
+											<div class="fw-semibold text-muted">emma@intenso.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1">Guest</option>
+											<option value="2" selected="selected">Owner</option>
+											<option value="3">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<img alt="Pic" src="/templates/t1/assets/media/avatars/300-12.jpg" />
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Ana Crown</a>
+											<div class="fw-semibold text-muted">ana.cf@limtel.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1" selected="selected">Guest</option>
+											<option value="2">Owner</option>
+											<option value="3">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<span class="symbol-label bg-light-info text-info fw-semibold">A</span>
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Robert Doe</a>
+											<div class="fw-semibold text-muted">robert@benko.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1">Guest</option>
+											<option value="2">Owner</option>
+											<option value="3" selected="selected">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<img alt="Pic" src="/templates/t1/assets/media/avatars/300-13.jpg" />
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">John Miller</a>
+											<div class="fw-semibold text-muted">miller@mapple.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1">Guest</option>
+											<option value="2">Owner</option>
+											<option value="3" selected="selected">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<span class="symbol-label bg-light-success text-success fw-semibold">L</span>
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Lucy Kunic</a>
+											<div class="fw-semibold text-muted">lucy.m@fentech.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1">Guest</option>
+											<option value="2" selected="selected">Owner</option>
+											<option value="3">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<img alt="Pic" src="/templates/t1/assets/media/avatars/300-21.jpg" />
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Ethan Wilder</a>
+											<div class="fw-semibold text-muted">ethan@loop.com.au</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1" selected="selected">Guest</option>
+											<option value="2">Owner</option>
+											<option value="3">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<img alt="Pic" src="/templates/t1/assets/media/avatars/300-23.jpg" />
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Dan Wilson</a>
+											<div class="fw-semibold text-muted">dam@consilting.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1">Guest</option>
+											<option value="2">Owner</option>
+											<option value="3" selected="selected">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+							</div>
+							<!--end::List-->
+						</div>
+						<!--end::Users-->
+						<!--begin::Notice-->
+						<div class="d-flex flex-stack">
+							<!--begin::Label-->
+							<div class="me-5 fw-semibold">
+								<label class="fs-6">Adding Users by Team Members</label>
+								<div class="fs-7 text-muted">If you need more info, please check budget planning</div>
+							</div>
+							<!--end::Label-->
+							<!--begin::Switch-->
+							<label class="form-check form-switch form-check-custom form-check-solid">
+								<input class="form-check-input" type="checkbox" value="1" checked="checked" />
+								<span class="form-check-label fw-semibold text-muted">Allowed</span>
+							</label>
+							<!--end::Switch-->
+						</div>
+						<!--end::Notice-->
+					</div>
+					<!--end::Modal body-->
+				</div>
+				<!--end::Modal content-->
+			</div>
+			<!--end::Modal dialog-->
+		</div>
+		<!--end::Modal - Invite Friend-->
 		<!--end::Modals-->
 		<!--begin::Javascript-->
-		<script>var hostUrl = "assets/";</script>
+		<script>var hostUrl = "/templates/t1/assets/";</script>
 		<!--begin::Global Javascript Bundle(mandatory for all pages)-->
 		<script src="/templates/t1/assets/plugins/global/plugins.bundle.js"></script>
 		<script src="/templates/t1/assets/js/scripts.bundle.js"></script>
 		<!--end::Global Javascript Bundle-->
 		<!--begin::Vendors Javascript(used for this page only)-->
-		<script src="/templates/t1/assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
 		<script src="/templates/t1/assets/plugins/custom/datatables/datatables.bundle.js"></script>
+		<script src="/templates/t1/assets/plugins/custom/formrepeater/formrepeater.bundle.js"></script>
 		<!--end::Vendors Javascript-->
 		<!--begin::Custom Javascript(used for this page only)-->
+		<script src="/templates/t1/assets/js/custom/apps/ecommerce/catalog/save-product.js"></script>
 		<script src="/templates/t1/assets/js/widgets.bundle.js"></script>
 		<script src="/templates/t1/assets/js/custom/widgets.js"></script>
 		<script src="/templates/t1/assets/js/custom/apps/chat/chat.js"></script>
@@ -6846,5 +6526,5 @@ License: For each use you must have a valid license purchased only from above li
 		<!--end::Custom Javascript-->
 		<!--end::Javascript-->
 	</body>
- 	<!--end::Body-->
+	<!--end::Body-->
 </html>

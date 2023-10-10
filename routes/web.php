@@ -33,4 +33,7 @@ Route::view('/user-signup', '/user_pages/sign-up');
 Route::view('/reset-psw', '/user_pages/reset-psw');
 Route::view('/two-factor', '/user_pages/two-factor');
 Route::view('/index-user', '/user_pages/dashboard');
+Route::view('/AddTest', '/QA_QC/AddTest');
+
+
 
