@@ -10,6 +10,7 @@ use App\Http\Controllers\NoticesController;
 
 
 
+
 /*
 |--------------------------------------------------------------------------
 | API Routes

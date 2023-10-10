@@ -28,5 +28,9 @@ Route::view('/user-view', '/user/view-user');
 Route::view('/role-view', 'view-role');
 Route::view('/role-list', 'RoleList');
 Route::view('/home', 'welcome');
+Route::view('/user-login', '/user_pages/login');
+Route::view('/user-signup', '/user_pages/sign-up');
+Route::view('/reset-psw', '/user_pages/reset-psw');
+Route::view('/two-factor', '/user_pages/two-factor');
 Route::view('/index-user', '/user_pages/dashboard');
 

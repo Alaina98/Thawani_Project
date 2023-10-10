@@ -1784,7 +1784,7 @@ License: For each use you must have a valid license purchased only from above li
 												<div class="d-flex align-items-sm-center mb-7">
 													<!--begin::Symbol-->
 													<div class="symbol symbol-60px symbol-2by3 me-4">
-														<div class="symbol-label" style="background-image: url('/templates/t1/assets/media/stock/600x400/img-20.jpg')"></div>
+														<div class="symbol-label" style="background-image: url('/templates/t1/assets/media/stock/600x400/img-70.jpg')"></div>
 													</div>
 													<!--end::Symbol-->
 													<!--begin::Title-->
@@ -1802,7 +1802,7 @@ License: For each use you must have a valid license purchased only from above li
 												<div class="d-flex align-items-sm-center mb-7">
 													<!--begin::Symbol-->
 													<div class="symbol symbol-60px symbol-2by3 me-4">
-														<div class="symbol-label" style="background-image: url('/templates/t1/assets/media/stock/600x400/img-19.jpg')"></div>
+														<div class="symbol-label" style="background-image: url('/templates/t1/assets/media/stock/600x400/img-78.jpg')"></div>
 													</div>
 													<!--end::Symbol-->
 													<!--begin::Title-->
@@ -1820,7 +1820,7 @@ License: For each use you must have a valid license purchased only from above li
 												<div class="d-flex align-items-sm-center mb-7">
 													<!--begin::Symbol-->
 													<div class="symbol symbol-60px symbol-2by3 me-4">
-														<div class="symbol-label" style="background-image: url('/templates/t1/assets/media/stock/600x400/img-25.jpg')"></div>
+														<div class="symbol-label" style="background-image: url('/templates/t1/assets/media/stock/600x400/img-73.jpg')"></div>
 													</div>
 													<!--end::Symbol-->
 													<!--begin::Title-->
@@ -1838,7 +1838,7 @@ License: For each use you must have a valid license purchased only from above li
 												<div class="d-flex align-items-sm-center">
 													<!--begin::Symbol-->
 													<div class="symbol symbol-60px symbol-2by3 me-4">
-														<div class="symbol-label" style="background-image: url('/templates/t1/assets/media/stock/600x400/img-24.jpg')"></div>
+														<div class="symbol-label" style="background-image: url('/templates/t1/assets/media/stock/600x400/img-75.jpg')"></div>
 													</div>
 													<!--end::Symbol-->
 													<!--begin::Title-->
