@@ -29,7 +29,7 @@ Route::view('/role-view', 'view-role');
 Route::view('/role-list', 'RoleList');
 Route::view('/home', 'welcome');
 Route::view('/index-user', '/user_pages/dashboard');
-Route::view('/AddTest', '/AddTest');
+Route::view('/AddTest', '/QA_QC/AddTest');
 
 
 
