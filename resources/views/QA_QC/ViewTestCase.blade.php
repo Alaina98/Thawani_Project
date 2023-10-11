@@ -1796,7 +1796,7 @@ License: For each use you must have a valid license purchased only from above li
                                                             <span class="badge badge-light-success fs-7 fw-bold">Success</span>
 														</td>
 														<td class="text-end">
-															<a href="#" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4 me-2">View</a>
+															<a href="http://127.0.0.1:8000/TestCase_Details" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4 me-2">View</a>
 															<a href="http://127.0.0.1:8000/Edit_TestCase" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4">Edit</a>
 														</td>
 													</tr>
@@ -1828,7 +1828,7 @@ License: For each use you must have a valid license purchased only from above li
 
 
 														<td class="text-end">
-															<a href="#" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4 me-2">View</a>
+															<a href="http://127.0.0.1:8000/TestCase_Details" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4 me-2">View</a>
 															<a href="http://127.0.0.1:8000/Edit_TestCase" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4">Edit</a>
 														</td>
 													</tr>
@@ -1856,7 +1856,7 @@ License: For each use you must have a valid license purchased only from above li
 
                                                         </td>
 														<td class="text-end">
-															<a href="#" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4 me-2">View</a>
+															<a href="http://127.0.0.1:8000/TestCase_Details" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4 me-2">View</a>
 															<a href="http://127.0.0.1:8000/Edit_TestCase" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4">Edit</a>
 														</td>
 													</tr>
@@ -1883,7 +1883,7 @@ License: For each use you must have a valid license purchased only from above li
 
 														</td>
 														<td class="text-end">
-															<a href="#" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4 me-2">View</a>
+															<a href="http://127.0.0.1:8000/TestCase_Details" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4 me-2">View</a>
 															<a href="http://127.0.0.1:8000/Edit_TestCase" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4">Edit</a>
 														</td>
 													</tr>
@@ -1909,7 +1909,7 @@ License: For each use you must have a valid license purchased only from above li
                                                             <span class="badge badge-light-primary fs-7 fw-bold">Approved</span>
                                                         </td>
 														<td class="text-end">
-															<a href="#" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4 me-2">View</a>
+															<a href="http://127.0.0.1:8000/TestCase_Details" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4 me-2">View</a>
 															<a href="http://127.0.0.1:8000/Edit_TestCase" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4">Edit</a>
 														</td>
 													</tr>
