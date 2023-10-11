@@ -1560,20 +1560,34 @@ License: For each use you must have a valid license purchased only from above li
 								<!--begin::Page title-->
 								<div class="page-title d-flex flex-column me-5 py-2">
 									<!--begin::Title-->
-									<h1 class="d-flex flex-column text-dark fw-bold fs-3 mb-0">Dashboard</h1>
+									<h1 class="d-flex flex-column text-dark fw-bold fs-3 mb-0">Complated Status</h1>
 									<!--end::Title-->
 									<!--begin::Breadcrumb-->
 									<ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 pt-1">
 										<!--begin::Item-->
 										<li class="breadcrumb-item text-muted">
-											<a href="http://127.0.0.1:8000/home" class="text-muted text-hover-primary">Home</a>
+											<a href="http://127.0.0.1:8000/index-user" class="text-muted text-hover-primary">Home</a>
 										</li>
+										<!--end::Item-->
+                                        <!--begin::Item-->
+										<li class="breadcrumb-item">
+											<span class="bullet bg-gray-200 w-5px h-2px"></span>
+										</li>
+										<!--end::Item-->
+                                        <!--begin::Item-->
+										<li class="breadcrumb-item text-muted">Status</li>
 										<!--end::Item-->
 										<!--begin::Item-->
 										<li class="breadcrumb-item">
 											<span class="bullet bg-gray-200 w-5px h-2px"></span>
 										</li>
 										<!--end::Item-->
+                                        <!--begin::Item-->
+										<li class="breadcrumb-item text-dark">
+                                            <a href="http://127.0.0.1:8000/testcase/complatesTest" class="text-muted text-hover-primary">Complated</a>
+                                        </li>
+										<!--end::Item-->
+
 
 									</ul>
 									<!--end::Breadcrumb-->
@@ -1685,7 +1699,7 @@ License: For each use you must have a valid license purchased only from above li
 											<!--begin::Header-->
 											<div class="card-header align-items-center border-0 mt-4">
 												<h3 class="card-title align-items-start flex-column">
-													<span class="fw-bold text-dark">Projects Test Cases</span>
+													<span class="fw-bold text-dark">Complated Test Cases</span>
 
 												</h3>
 												<div class="card-toolbar">
@@ -1780,7 +1794,10 @@ License: For each use you must have a valid license purchased only from above li
 											<!--end::Header-->
 											<!--begin::Body-->
 											<div class="card-body pt-3">
-												<!--begin::Item-->
+
+
+
+                                                <!--begin::Item-->
 												<div class="d-flex align-items-sm-center mb-7">
 													<!--begin::Symbol-->
 													<div class="symbol symbol-60px symbol-2by3 me-4">
@@ -1798,25 +1815,8 @@ License: For each use you must have a valid license purchased only from above li
 													<!--end::Title-->
 												</div>
 												<!--end::Item-->
-												<!--begin::Item-->
-												<div class="d-flex align-items-sm-center mb-7">
-													<!--begin::Symbol-->
-													<div class="symbol symbol-60px symbol-2by3 me-4">
-														<div class="symbol-label" style="background-image: url('/templates/t1/assets/media/stock/600x400/img-78.jpg')"></div>
-													</div>
-													<!--end::Symbol-->
-													<!--begin::Title-->
-													<div class="d-flex flex-row-fluid flex-wrap align-items-center">
-														<div class="flex-grow-1 me-2">
-															<a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">Connection failed</a>
-															<span class="text-muted fw-semibold d-block pt-1">Moojab</span>
-														</div>
-														<span class="badge badge-light-warning fs-8 fw-bold my-2">In Progress</span>
-													</div>
-													<!--end::Title-->
-												</div>
-												<!--end::Item-->
-												<!--begin::Item-->
+
+                                                <!--begin::Item-->
 												<div class="d-flex align-items-sm-center mb-7">
 													<!--begin::Symbol-->
 													<div class="symbol symbol-60px symbol-2by3 me-4">
@@ -1830,24 +1830,6 @@ License: For each use you must have a valid license purchased only from above li
 															<span class="text-muted fw-semibold d-block pt-1">Moojab</span>
 														</div>
 														<span class="badge badge-light-success fs-8 fw-bold my-2">Complated</span>
-													</div>
-													<!--end::Title-->
-												</div>
-												<!--end::Item-->
-												<!--begin::Item-->
-												<div class="d-flex align-items-sm-center">
-													<!--begin::Symbol-->
-													<div class="symbol symbol-60px symbol-2by3 me-4">
-														<div class="symbol-label" style="background-image: url('/templates/t1/assets/media/stock/600x400/img-75.jpg')"></div>
-													</div>
-													<!--end::Symbol-->
-													<!--begin::Title-->
-													<div class="d-flex flex-row-fluid flex-wrap align-items-center">
-														<div class="flex-grow-1 me-2">
-															<a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">Email Notification</a>
-															<span class="text-muted fw-semibold d-block pt-1">Moojab</span>
-														</div>
-														<span class="badge badge-light-danger fs-8 fw-bold my-2">On Hold</span>
 													</div>
 													<!--end::Title-->
 												</div>

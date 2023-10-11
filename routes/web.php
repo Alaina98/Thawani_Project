@@ -35,5 +35,10 @@ Route::view('/two-factor', '/user_pages/two-factor');
 Route::view('/index-user', '/user_pages/dashboard');
 Route::view('/AddTest', '/QA_QC/AddTest');
 
+//TestCases
+Route::view('/testcase/onholdTest', '/user_pages/onholdTest');
+Route::view('/testcase/inprogressTest', '/user_pages/inprogressTest');
+Route::view('/testcase/complatesTest', '/user_pages/complatesTest');
+Route::view('/testcase/testcasesForm', '/user_pages/testcasesForm');
 
 

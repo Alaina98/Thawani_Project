@@ -1560,20 +1560,34 @@ License: For each use you must have a valid license purchased only from above li
 								<!--begin::Page title-->
 								<div class="page-title d-flex flex-column me-5 py-2">
 									<!--begin::Title-->
-									<h1 class="d-flex flex-column text-dark fw-bold fs-3 mb-0">Dashboard</h1>
+									<h1 class="d-flex flex-column text-dark fw-bold fs-3 mb-0">Test Cases</h1>
 									<!--end::Title-->
 									<!--begin::Breadcrumb-->
 									<ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 pt-1">
 										<!--begin::Item-->
 										<li class="breadcrumb-item text-muted">
-											<a href="http://127.0.0.1:8000/home" class="text-muted text-hover-primary">Home</a>
+											<a href="http://127.0.0.1:8000/index-user" class="text-muted text-hover-primary">Home</a>
 										</li>
+										<!--end::Item-->
+                                        <!--begin::Item-->
+										<li class="breadcrumb-item">
+											<span class="bullet bg-gray-200 w-5px h-2px"></span>
+										</li>
+										<!--end::Item-->
+                                        <!--begin::Item-->
+										<li class="breadcrumb-item text-muted">Test Cases Form</li>
 										<!--end::Item-->
 										<!--begin::Item-->
 										<li class="breadcrumb-item">
 											<span class="bullet bg-gray-200 w-5px h-2px"></span>
 										</li>
 										<!--end::Item-->
+                                        <!--begin::Item-->
+										<li class="breadcrumb-item text-dark">
+                                            <a href="http://127.0.0.1:8000/testcase/testcasesForm" class="text-muted text-hover-primary">Show my TestCases</a>
+                                        </li>
+										<!--end::Item-->
+
 
 									</ul>
 									<!--end::Breadcrumb-->
@@ -1678,186 +1692,140 @@ License: For each use you must have a valid license purchased only from above li
 						</div>
 						<!--end::Toolbar-->
                         <!--begin:container-->
-                        <div class="row g-5 g-xl-8">
-									<div class="col-xl-6">
-										<!--begin::List Widget 7-->
-										<div class="card card-xl-stretch mb-xl-8">
-											<!--begin::Header-->
-											<div class="card-header align-items-center border-0 mt-4">
-												<h3 class="card-title align-items-start flex-column">
-													<span class="fw-bold text-dark">Projects Test Cases</span>
+                        <div class="card card-flush mt-6 mt-xl-9">
+									<!--begin::Card header-->
+									<div class="card-header mt-5">
+										<!--begin::Card title-->
+										<div class="card-title flex-column">
+											<h2 class="fw-bold mb-1">Test Cases</h2>
 
-												</h3>
-												<div class="card-toolbar">
-													<!--begin::Menu-->
-													<button type="button" class="btn btn-sm btn-icon btn-color-primary btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
-														<i class="ki-duotone ki-category fs-6">
-															<span class="path1"></span>
-															<span class="path2"></span>
-															<span class="path3"></span>
-															<span class="path4"></span>
-														</i>
-													</button>
-													<!--begin::Menu 1-->
-													<div class="menu menu-sub menu-sub-dropdown w-250px w-md-300px" data-kt-menu="true" id="kt_menu_64b7768c57b22">
-														<!--begin::Header-->
-														<div class="px-7 py-5">
-															<div class="fs-5 text-dark fw-bold">Filter Options</div>
-														</div>
-														<!--end::Header-->
-														<!--begin::Menu separator-->
-														<div class="separator border-gray-200"></div>
-														<!--end::Menu separator-->
-														<!--begin::Form-->
-														<div class="px-7 py-5">
-															<!--begin::Input group-->
-															<div class="mb-10">
-																<!--begin::Label-->
-																<label class="form-label fw-semibold">Status:</label>
-																<!--end::Label-->
-																<!--begin::Input-->
-																<div>
-																	<select class="form-select form-select-solid" multiple="multiple" data-kt-select2="true" data-close-on-select="false" data-placeholder="Select option" data-dropdown-parent="#kt_menu_64b7768c57b22" data-allow-clear="true">
-																		<option></option>
-																		<option value="1">Approved</option>
-																		<option value="2">Pending</option>
-																		<option value="2">In Process</option>
-																		<option value="2">Rejected</option>
-																	</select>
-																</div>
-																<!--end::Input-->
-															</div>
-															<!--end::Input group-->
-															<!--begin::Input group-->
-															<div class="mb-10">
-																<!--begin::Label-->
-																<label class="form-label fw-semibold">Member Type:</label>
-																<!--end::Label-->
-																<!--begin::Options-->
-																<div class="d-flex">
-																	<!--begin::Options-->
-																	<label class="form-check form-check-sm form-check-custom form-check-solid me-5">
-																		<input class="form-check-input" type="checkbox" value="1" />
-																		<span class="form-check-label">Author</span>
-																	</label>
-																	<!--end::Options-->
-																	<!--begin::Options-->
-																	<label class="form-check form-check-sm form-check-custom form-check-solid">
-																		<input class="form-check-input" type="checkbox" value="2" checked="checked" />
-																		<span class="form-check-label">Customer</span>
-																	</label>
-																	<!--end::Options-->
-																</div>
-																<!--end::Options-->
-															</div>
-															<!--end::Input group-->
-															<!--begin::Input group-->
-															<div class="mb-10">
-																<!--begin::Label-->
-																<label class="form-label fw-semibold">Notifications:</label>
-																<!--end::Label-->
-																<!--begin::Switch-->
-																<div class="form-check form-switch form-switch-sm form-check-custom form-check-solid">
-																	<input class="form-check-input" type="checkbox" value="" name="notifications" checked="checked" />
-																	<label class="form-check-label">Enabled</label>
-																</div>
-																<!--end::Switch-->
-															</div>
-															<!--end::Input group-->
-															<!--begin::Actions-->
-															<div class="d-flex justify-content-end">
-																<button type="reset" class="btn btn-sm btn-light btn-active-light-primary me-2" data-kt-menu-dismiss="true">Reset</button>
-																<button type="submit" class="btn btn-sm btn-primary" data-kt-menu-dismiss="true">Apply</button>
-															</div>
-															<!--end::Actions-->
-														</div>
-														<!--end::Form-->
-													</div>
-													<!--end::Menu 1-->
-													<!--end::Menu-->
-												</div>
-											</div>
-											<!--end::Header-->
-											<!--begin::Body-->
-											<div class="card-body pt-3">
-												<!--begin::Item-->
-												<div class="d-flex align-items-sm-center mb-7">
-													<!--begin::Symbol-->
-													<div class="symbol symbol-60px symbol-2by3 me-4">
-														<div class="symbol-label" style="background-image: url('/templates/t1/assets/media/stock/600x400/img-70.jpg')"></div>
-													</div>
-													<!--end::Symbol-->
-													<!--begin::Title-->
-													<div class="d-flex flex-row-fluid flex-wrap align-items-center">
-														<div class="flex-grow-1 me-2">
-															<a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">Search tool</a>
-															<span class="text-muted fw-semibold d-block pt-1">Tajeer</span>
-														</div>
-														<span class="badge badge-light-success fs-8 fw-bold my-2">Complated</span>
-													</div>
-													<!--end::Title-->
-												</div>
-												<!--end::Item-->
-												<!--begin::Item-->
-												<div class="d-flex align-items-sm-center mb-7">
-													<!--begin::Symbol-->
-													<div class="symbol symbol-60px symbol-2by3 me-4">
-														<div class="symbol-label" style="background-image: url('/templates/t1/assets/media/stock/600x400/img-78.jpg')"></div>
-													</div>
-													<!--end::Symbol-->
-													<!--begin::Title-->
-													<div class="d-flex flex-row-fluid flex-wrap align-items-center">
-														<div class="flex-grow-1 me-2">
-															<a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">Connection failed</a>
-															<span class="text-muted fw-semibold d-block pt-1">Moojab</span>
-														</div>
-														<span class="badge badge-light-warning fs-8 fw-bold my-2">In Progress</span>
-													</div>
-													<!--end::Title-->
-												</div>
-												<!--end::Item-->
-												<!--begin::Item-->
-												<div class="d-flex align-items-sm-center mb-7">
-													<!--begin::Symbol-->
-													<div class="symbol symbol-60px symbol-2by3 me-4">
-														<div class="symbol-label" style="background-image: url('/templates/t1/assets/media/stock/600x400/img-73.jpg')"></div>
-													</div>
-													<!--end::Symbol-->
-													<!--begin::Title-->
-													<div class="d-flex flex-row-fluid flex-wrap align-items-center">
-														<div class="flex-grow-1 me-2">
-															<a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">Identity verification issue</a>
-															<span class="text-muted fw-semibold d-block pt-1">Moojab</span>
-														</div>
-														<span class="badge badge-light-success fs-8 fw-bold my-2">Complated</span>
-													</div>
-													<!--end::Title-->
-												</div>
-												<!--end::Item-->
-												<!--begin::Item-->
-												<div class="d-flex align-items-sm-center">
-													<!--begin::Symbol-->
-													<div class="symbol symbol-60px symbol-2by3 me-4">
-														<div class="symbol-label" style="background-image: url('/templates/t1/assets/media/stock/600x400/img-75.jpg')"></div>
-													</div>
-													<!--end::Symbol-->
-													<!--begin::Title-->
-													<div class="d-flex flex-row-fluid flex-wrap align-items-center">
-														<div class="flex-grow-1 me-2">
-															<a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">Email Notification</a>
-															<span class="text-muted fw-semibold d-block pt-1">Moojab</span>
-														</div>
-														<span class="badge badge-light-danger fs-8 fw-bold my-2">On Hold</span>
-													</div>
-													<!--end::Title-->
-												</div>
-												<!--end::Item-->
-											</div>
-											<!--end::Body-->
 										</div>
-										<!--end::List Widget 7-->
+										<!--begin::Card title-->
+										<!--begin::Card toolbar-->
+										<div class="card-toolbar my-1">
+											<!--begin::Select-->
+											<div class="me-4 my-1">
+												<select id="kt_filter_year" name="year" data-control="select2" data-hide-search="true" class="w-135px form-select form-select-solid form-select-sm">
+													<option value="All" selected="selected">All Test Cases</option>
+													<option value="thisyear">Mojab</option>
+													<option value="thismonth">Tajeer</option>
+													<option value="lastmonth">Technical</option>
+
+												</select>
+											</div>
+											<!--end::Select-->
+
+											<!--begin::Search-->
+											<div class="d-flex align-items-center position-relative my-1">
+												<i class="ki-duotone ki-magnifier fs-3 position-absolute ms-3">
+													<span class="path1"></span>
+													<span class="path2"></span>
+												</i>
+												<input type="text" id="kt_filter_search" class="form-control form-control-solid form-select-sm w-150px ps-9" placeholder="Search Test Case" />
+											</div>
+											<!--end::Search-->
+										</div>
+										<!--begin::Card toolbar-->
 									</div>
-                        </div>
+									<!--end::Card header-->
+									<!--begin::Card body-->
+									<div class="card-body pt-0">
+										<!--begin::Table container-->
+										<div class="table-responsive">
+											<!--begin::Table-->
+											<table id="kt_profile_overview_table" class="table table-row-bordered table-row-dashed gy-4 align-middle fw-bold">
+												<thead class="fs-7 text-gray-400 ">
+													<tr>
+
+														<th class="min-w-250px">Title</th>
+														<th class="min-w-100px">Date</th>
+														<th class="min-w-100px">Change Status</th>
+
+													</tr>
+												</thead>
+												<tbody class="fs-6">
+													<tr>
+														<td>
+															<!--begin::User-->
+															<div class="d-flex align-items-center">
+
+																<!--begin::Info-->
+																<div class="d-flex flex-column justify-content-center">
+																	<a href="" class="fs-6 text-gray-800 text-hover-primary">Email Notification</a>
+																	<div class="fw-semibold text-gray-400">Mojab</div>
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::User-->
+														</td>
+														<td>Jul 25, 2023</td>
+
+                                                        <td class="text-end">
+															<a href="#" class="btn btn-light btn-sm">Accept</a>
+														</td>
+                                                        <td class="text-end">
+															<a href="#" class="btn btn-light btn-sm">Reject</a>
+														</td>
+
+													</tr>
+
+
+
+													<tr>
+														<td>
+															<!--begin::User-->
+															<div class="d-flex align-items-center">
+
+																<!--begin::Info-->
+																<div class="d-flex flex-column justify-content-center">
+																	<a href="" class="fs-6 text-gray-800 text-hover-primary">SMS Notification</a>
+																	<div class="fw-semibold text-gray-400">Tajeer</div>
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::User-->
+														</td>
+														<td>Jun 20, 2023</td>
+
+														<td class="text-end">
+															<a href="#" class="btn btn-light btn-sm">Accept</a>
+														</td>
+                                                        <td class="text-end">
+															<a href="#" class="btn btn-light btn-sm">Reject</a>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<!--begin::User-->
+															<div class="d-flex align-items-center">
+
+																<!--begin::Info-->
+																<div class="d-flex flex-column justify-content-center">
+																	<a href="" class="fs-6 text-gray-800 text-hover-primary">Search icon is not work</a>
+																	<div class="fw-semibold text-gray-400">Mojab</div>
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::User-->
+														</td>
+														<td>Aug 19, 2023</td>
+
+														<td class="text-end">
+															<a href="#" class="btn btn-light btn-sm">Accept</a>
+														</td>
+                                                        <td class="text-end">
+															<a href="#" class="btn btn-light btn-sm">Reject</a>
+														</td>
+													</tr>
+
+												</tbody>
+											</table>
+											<!--end::Table-->
+										</div>
+										<!--end::Table container-->
+									</div>
+									<!--end::Card body-->
+								</div>
                         <!--end:container-->
 
 
